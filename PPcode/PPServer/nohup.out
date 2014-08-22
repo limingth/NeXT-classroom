@@ -1,0 +1,1133 @@
+info: socket.io started
+Listening port: 8095
+debug: client authorized
+info: handshake authorized wSbXb1Yg33CneAFrP4f1
+debug: setting request GET /socket.io/1/websocket/wSbXb1Yg33CneAFrP4f1?token=11
+debug: set heartbeat interval for client wSbXb1Yg33CneAFrP4f1
+debug: client authorized for 
+debug: websocket writing 1::
+11 authentication passed.
+debug: client authorized for /webrtc
+debug: websocket writing 1::/webrtc
+debug: websocket writing 5::/webrtc:{"name":"server-authenticated","args":[{"uid":"11"}]}
+A new client has connected. Online user number: 1
+debug: client authorized
+info: handshake authorized uSWb1c2rJAFXsR8wP4f2
+debug: websocket writing 5::/webrtc:{"name":"chat-wait"}
+Chat ID: 100, attendee number: 1
+debug: setting request GET /socket.io/1/websocket/uSWb1c2rJAFXsR8wP4f2?token=12
+debug: set heartbeat interval for client uSWb1c2rJAFXsR8wP4f2
+debug: client authorized for 
+debug: websocket writing 1::
+debug: setting request GET /socket.io/1/xhr-polling/uSWb1c2rJAFXsR8wP4f2?token=12&t=1396858424698
+debug: setting poll timeout
+debug: discarding transport
+debug: cleared heartbeat interval for client uSWb1c2rJAFXsR8wP4f2
+debug: emitting heartbeat for client wSbXb1Yg33CneAFrP4f1
+debug: websocket writing 2::
+debug: set heartbeat timeout for client wSbXb1Yg33CneAFrP4f1
+debug: setting request GET /socket.io/1/jsonp-polling/uSWb1c2rJAFXsR8wP4f2?token=12&t=1396858434699&i=0
+debug: setting poll timeout
+debug: discarding transport
+debug: clearing poll timeout
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client wSbXb1Yg33CneAFrP4f1
+debug: set heartbeat interval for client wSbXb1Yg33CneAFrP4f1
+debug: jsonppolling received data packet �10�1::/webrtc�61�5::/webrtc:{"name":"chatroom-join","args":[{"chatId":"100"}]}�61�5::/webrtc:{"name":"chatroom-join","args":[{"chatId":"100"}]}
+12 authentication passed.
+debug: client authorized for /webrtc
+debug: clearing poll timeout
+debug: jsonppolling writing io.j[0]("1::/webrtc");
+debug: set close timeout for client uSWb1c2rJAFXsR8wP4f2
+A new client has connected. Online user number: 2
+debug: websocket writing 5::/webrtc:{"name":"chat-ready","args":[{"peerId":"12"}]}
+Chat ID: 100, attendee number: 2
+debug: websocket writing 5::/webrtc:{"name":"video-error","args":[{"code":2131}]}
+info: transport end (undefined)
+debug: set close timeout for client wSbXb1Yg33CneAFrP4f1
+debug: cleared close timeout for client wSbXb1Yg33CneAFrP4f1
+debug: cleared heartbeat interval for client wSbXb1Yg33CneAFrP4f1
+Peers: {}
+Chat ID: 100, attendee number: 1
+11 has disconnected. Online user number: 1
+debug: discarding transport
+debug: setting request GET /socket.io/1/jsonp-polling/uSWb1c2rJAFXsR8wP4f2?token=12&t=1396858439452&i=0
+debug: setting poll timeout
+debug: clearing poll timeout
+debug: jsonppolling writing io.j[0]("�64�5::/webrtc:{\"name\":\"server-authenticated\",\"args\":[{\"uid\":\"12\"}]}�57�5::/webrtc:{\"name\":\"chat-ready\",\"args\":[{\"peerId\":\"11\"}]}�61�5::/webrtc:{\"name\":\"video-invitation\",\"args\":[{\"from\":\"11\"}]}�56�5::/webrtc:{\"name\":\"video-error\",\"args\":[{\"code\":2131}]}�31�5::/webrtc:{\"name\":\"chat-wait\"}");
+debug: set close timeout for client uSWb1c2rJAFXsR8wP4f2
+debug: discarding transport
+debug: cleared close timeout for client uSWb1c2rJAFXsR8wP4f2
+debug: setting request GET /socket.io/1/jsonp-polling/uSWb1c2rJAFXsR8wP4f2?token=12&t=1396858447032&i=0
+debug: setting poll timeout
+debug: discarding transport
+debug: cleared close timeout for client uSWb1c2rJAFXsR8wP4f2
+debug: jsonppolling received data packet 5::/webrtc:{"name":"video-signal","args":[{"to":"11","data":{"sdp":"v=0\r\no=- 356222499249507511 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE audio video\r\na=msid-semantic: WMS pU319Tmlw3RNgVH6tKw50g2tImBUd1X0qUFb\r\nm=audio 1 RTP/SAVPF 111\r\nc=IN IP4 0.0.0.0\r\na=rtcp:1 IN IP4 0.0.0.0\r\na=ice-ufrag:Mb89kc6/lpTKRUky\r\na=ice-pwd:Gm+dIPzxv0Tq5EALDaf8Nf4B\r\na=ice-options:google-ice\r\na=fingerprint:sha-256 98:B7:15:92:7D:2E:38:AE:15:4B:11:2F:5F:0D:D0:5D:A2:9A:44:42:7A:B1:50:ED:90:20:56:C7:62:69:C3:82\r\na=setup:actpass\r\na=mid:audio\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=sendrecv\r\na=rtcp-mux\r\na=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:sIDvYXQe5rVJC91vVtmgXkD1B9B9H663MPa2rBj0\r\na=rtpmap:111 opus/48000/2\r\na=fmtp:111 minptime=10 stereo=1; sprop-stereo=1\r\na=maxptime:60\r\na=ssrc:1127478829 cname:jH4dUnyckeeSF9c1\r\na=ssrc:1127478829 msid:pU319Tmlw3RNgVH6tKw50g2tImBUd1X0qUFb 7e08dbcb-3ff4-4019-bb29-ee2bad132af8\r\na=ssrc:1127478829 mslabel:pU319Tmlw3RNgVH6tKw50g2tImBUd1X0qUFb\r\na=ssrc:1127478829 label:7e08dbcb-3ff4-4019-bb29-ee2bad132af8\r\nm=video 1 RTP/SAVPF 100 116 117\r\nc=IN IP4 0.0.0.0\r\na=rtcp:1 IN IP4 0.0.0.0\r\na=ice-ufrag:Mb89kc6/lpTKRUky\r\na=ice-pwd:Gm+dIPzxv0Tq5EALDaf8Nf4B\r\na=ice-options:google-ice\r\na=fingerprint:sha-256 98:B7:15:92:7D:2E:38:AE:15:4B:11:2F:5F:0D:D0:5D:A2:9A:44:42:7A:B1:50:ED:90:20:56:C7:62:69:C3:82\r\na=setup:actpass\r\na=mid:video\r\na=extmap:2 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:3 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=sendrecv\r\na=rtcp-mux\r\na=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:sIDvYXQe5rVJC91vVtmgXkD1B9B9H663MPa2rBj0\r\na=rtpmap:100 VP8/90000\r\na=rtcp-fb:100 ccm fir\r\na=rtcp-fb:100 nack\r\na=rtcp-fb:100 goog-remb\r\na=rtpmap:116 red/90000\r\na=rtpmap:117 ulpfec/90000\r\na=ssrc:1642661417 cname:jH4dUnyckeeSF9c1\r\na=ssrc:1642661417 msid:pU319Tmlw3RNgVH6tKw50g2tImBUd1X0qUFb 5ddac42f-452c-4a28-811a-245a97e33c19\r\na=ssrc:1642661417 mslabel:pU319Tmlw3RNgVH6tKw50g2tImBUd1X0qUFb\r\na=ssrc:1642661417 label:5ddac42f-452c-4a28-811a-245a97e33c19\r\n","type":"offer"}}]}
+debug: clearing poll timeout
+debug: jsonppolling writing io.j[0]("5::/webrtc:{\"name\":\"video-error\",\"args\":[{\"code\":2201}]}");
+debug: set close timeout for client uSWb1c2rJAFXsR8wP4f2
+debug: setting request GET /socket.io/1/jsonp-polling/uSWb1c2rJAFXsR8wP4f2?token=12&t=1396858447396&i=0
+debug: setting poll timeout
+debug: discarding transport
+debug: cleared close timeout for client uSWb1c2rJAFXsR8wP4f2
+debug: jsonppolling received data packet �218�5::/webrtc:{"name":"video-signal","args":[{"to":"11","data":{"type":"candidate","candidate":"a=candidate:1840965416 1 udp 2113937151 192.168.0.103 58712 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}�218�5::/webrtc:{"name":"video-signal","args":[{"to":"11","data":{"type":"candidate","candidate":"a=candidate:1840965416 2 udp 2113937151 192.168.0.103 58712 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}�217�5::/webrtc:{"name":"video-signal","args":[{"to":"11","data":{"type":"candidate","candidate":"a=candidate:2999745851 1 udp 2113937151 192.168.56.1 58713 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}�217�5::/webrtc:{"name":"video-signal","args":[{"to":"11","data":{"type":"candidate","candidate":"a=candidate:2999745851 2 udp 2113937151 192.168.56.1 58713 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}�218�5::/webrtc:{"name":"video-signal","args":[{"to":"11","data":{"type":"candidate","candidate":"a=candidate:1840965416 1 udp 2113937151 192.168.0.103 58712 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}�218�5::/webrtc:{"name":"video-signal","args":[{"to":"11","data":{"type":"candidate","candidate":"a=candidate:1840965416 2 udp 2113937151 192.168.0.103 58712 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}�217�5::/webrtc:{"name":"video-signal","args":[{"to":"11","data":{"type":"candidate","candidate":"a=candidate:2999745851 1 udp 2113937151 192.168.56.1 58713 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}�217�5::/webrtc:{"name":"video-signal","args":[{"to":"11","data":{"type":"candidate","candidate":"a=candidate:2999745851 2 udp 2113937151 192.168.56.1 58713 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}�253�5::/webrtc:{"name":"video-signal","args":[{"to":"11","data":{"type":"candidate","candidate":"a=candidate:3975340444 1 udp 1845501695 116.235.249.228 58712 typ srflx raddr 192.168.0.103 rport 58712 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}�253�5::/webrtc:{"name":"video-signal","args":[{"to":"11","data":{"type":"candidate","candidate":"a=candidate:3975340444 2 udp 1845501695 116.235.249.228 58712 typ srflx raddr 192.168.0.103 rport 58712 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}�253�5::/webrtc:{"name":"video-signal","args":[{"to":"11","data":{"type":"candidate","candidate":"a=candidate:3975340444 1 udp 1845501695 116.235.249.228 58712 typ srflx raddr 192.168.0.103 rport 58712 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}�253�5::/webrtc:{"name":"video-signal","args":[{"to":"11","data":{"type":"candidate","candidate":"a=candidate:3975340444 2 udp 1845501695 116.235.249.228 58712 typ srflx raddr 192.168.0.103 rport 58712 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}�249�5::/webrtc:{"name":"video-signal","args":[{"to":"11","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 16785151 61.129.90.140 58835 typ relay raddr 116.235.249.228 rport 52396 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}�249�5::/webrtc:{"name":"video-signal","args":[{"to":"11","data":{"type":"candidate","candidate":"a=candidate:48544373 2 udp 16785151 61.129.90.140 58835 typ relay raddr 116.235.249.228 rport 52396 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}�249�5::/webrtc:{"name":"video-signal","args":[{"to":"11","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 16785151 61.129.90.140 58835 typ relay raddr 116.235.249.228 rport 52396 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}�249�5::/webrtc:{"name":"video-signal","args":[{"to":"11","data":{"type":"candidate","candidate":"a=candidate:48544373 2 udp 16785151 61.129.90.140 58835 typ relay raddr 116.235.249.228 rport 52396 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}�249�5::/webrtc:{"name":"video-signal","args":[{"to":"11","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 16785151 61.129.90.140 59238 typ relay raddr 116.235.249.228 rport 52398 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}�249�5::/webrtc:{"name":"video-signal","args":[{"to":"11","data":{"type":"candidate","candidate":"a=candidate:48544373 2 udp 16785151 61.129.90.140 59238 typ relay raddr 116.235.249.228 rport 52398 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}�249�5::/webrtc:{"name":"video-signal","args":[{"to":"11","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 16785151 61.129.90.140 59238 typ relay raddr 116.235.249.228 rport 52398 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}�249�5::/webrtc:{"name":"video-signal","args":[{"to":"11","data":{"type":"candidate","candidate":"a=candidate:48544373 2 udp 16785151 61.129.90.140 59238 typ relay raddr 116.235.249.228 rport 52398 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}�249�5::/webrtc:{"name":"video-signal","args":[{"to":"11","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 16785151 61.129.90.140 49765 typ relay raddr 116.235.249.228 rport 52397 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}�249�5::/webrtc:{"name":"video-signal","args":[{"to":"11","data":{"type":"candidate","candidate":"a=candidate:48544373 2 udp 16785151 61.129.90.140 49765 typ relay raddr 116.235.249.228 rport 52397 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}�249�5::/webrtc:{"name":"video-signal","args":[{"to":"11","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 16785151 61.129.90.140 49765 typ relay raddr 116.235.249.228 rport 52397 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}�249�5::/webrtc:{"name":"video-signal","args":[{"to":"11","data":{"type":"candidate","candidate":"a=candidate:48544373 2 udp 16785151 61.129.90.140 49765 typ relay raddr 116.235.249.228 rport 52397 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}�249�5::/webrtc:{"name":"video-signal","args":[{"to":"11","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 16785151 61.129.90.140 64161 typ relay raddr 116.235.249.228 rport 52399 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}�249�5::/webrtc:{"name":"video-signal","args":[{"to":"11","data":{"type":"candidate","candidate":"a=candidate:48544373 2 udp 16785151 61.129.90.140 64161 typ relay raddr 116.235.249.228 rport 52399 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}�249�5::/webrtc:{"name":"video-signal","args":[{"to":"11","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 16785151 61.129.90.140 64161 typ relay raddr 116.235.249.228 rport 52399 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}�249�5::/webrtc:{"name":"video-signal","args":[{"to":"11","data":{"type":"candidate","candidate":"a=candidate:48544373 2 udp 16785151 61.129.90.140 64161 typ relay raddr 116.235.249.228 rport 52399 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}�213�5::/webrtc:{"name":"video-signal","args":[{"to":"11","data":{"type":"candidate","candidate":"a=candidate:590945240 1 tcp 1509957375 192.168.0.103 0 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}�213�5::/webrtc:{"name":"video-signal","args":[{"to":"11","data":{"type":"candidate","candidate":"a=candidate:590945240 2 tcp 1509957375 192.168.0.103 0 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}�213�5::/webrtc:{"name":"video-signal","args":[{"to":"11","data":{"type":"candidate","candidate":"a=candidate:590945240 1 tcp 1509957375 192.168.0.103 0 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}�213�5::/webrtc:{"name":"video-signal","args":[{"to":"11","data":{"type":"candidate","candidate":"a=candidate:590945240 2 tcp 1509957375 192.168.0.103 0 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}�213�5::/webrtc:{"name":"video-signal","args":[{"to":"11","data":{"type":"candidate","candidate":"a=candidate:4233069003 1 tcp 1509957375 192.168.56.1 0 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}�213�5::/webrtc:{"name":"video-signal","args":[{"to":"11","data":{"type":"candidate","candidate":"a=candidate:4233069003 2 tcp 1509957375 192.168.56.1 0 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}�213�5::/webrtc:{"name":"video-signal","args":[{"to":"11","data":{"type":"candidate","candidate":"a=candidate:4233069003 1 tcp 1509957375 192.168.56.1 0 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}�213�5::/webrtc:{"name":"video-signal","args":[{"to":"11","data":{"type":"candidate","candidate":"a=candidate:4233069003 2 tcp 1509957375 192.168.56.1 0 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}�249�5::/webrtc:{"name":"video-signal","args":[{"to":"11","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 33562367 61.129.90.140 57932 typ relay raddr 116.235.249.228 rport 58716 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}�249�5::/webrtc:{"name":"video-signal","args":[{"to":"11","data":{"type":"candidate","candidate":"a=candidate:48544373 2 udp 33562367 61.129.90.140 57932 typ relay raddr 116.235.249.228 rport 58716 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}�249�5::/webrtc:{"name":"video-signal","args":[{"to":"11","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 33562367 61.129.90.140 57932 typ relay raddr 116.235.249.228 rport 58716 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}�249�5::/webrtc:{"name":"video-signal","args":[{"to":"11","data":{"type":"candidate","candidate":"a=candidate:48544373 2 udp 33562367 61.129.90.140 57932 typ relay raddr 116.235.249.228 rport 58716 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: clearing poll timeout
+debug: jsonppolling writing io.j[0]("5::/webrtc:{\"name\":\"video-error\",\"args\":[{\"code\":2201}]}");
+debug: set close timeout for client uSWb1c2rJAFXsR8wP4f2
+debug: setting request GET /socket.io/1/jsonp-polling/uSWb1c2rJAFXsR8wP4f2?token=12&t=1396858448043&i=0
+debug: setting poll timeout
+debug: clearing poll timeout
+debug: jsonppolling writing io.j[0]("�56�5::/webrtc:{\"name\":\"video-error\",\"args\":[{\"code\":2201}]}�56�5::/webrtc:{\"name\":\"video-error\",\"args\":[{\"code\":2201}]}�56�5::/webrtc:{\"name\":\"video-error\",\"args\":[{\"code\":2201}]}�56�5::/webrtc:{\"name\":\"video-error\",\"args\":[{\"code\":2201}]}�56�5::/webrtc:{\"name\":\"video-error\",\"args\":[{\"code\":2201}]}�56�5::/webrtc:{\"name\":\"video-error\",\"args\":[{\"code\":2201}]}�56�5::/webrtc:{\"name\":\"video-error\",\"args\":[{\"code\":2201}]}�56�5::/webrtc:{\"name\":\"video-error\",\"args\":[{\"code\":2201}]}�56�5::/webrtc:{\"name\":\"video-error\",\"args\":[{\"code\":2201}]}�56�5::/webrtc:{\"name\":\"video-error\",\"args\":[{\"code\":2201}]}�56�5::/webrtc:{\"name\":\"video-error\",\"args\":[{\"code\":2201}]}�56�5::/webrtc:{\"name\":\"video-error\",\"args\":[{\"code\":2201}]}�56�5::/webrtc:{\"name\":\"video-error\",\"args\":[{\"code\":2201}]}�56�5::/webrtc:{\"name\":\"video-error\",\"args\":[{\"code\":2201}]}�56�5::/webrtc:{\"name\":\"video-error\",\"args\":[{\"code\":2201}]}�56�5::/webrtc:{\"name\":\"video-error\",\"args\":[{\"code\":2201}]}�56�5::/webrtc:{\"name\":\"video-error\",\"args\":[{\"code\":2201}]}�56�5::/webrtc:{\"name\":\"video-error\",\"args\":[{\"code\":2201}]}�56�5::/webrtc:{\"name\":\"video-error\",\"args\":[{\"code\":2201}]}�56�5::/webrtc:{\"name\":\"video-error\",\"args\":[{\"code\":2201}]}�56�5::/webrtc:{\"name\":\"video-error\",\"args\":[{\"code\":2201}]}�56�5::/webrtc:{\"name\":\"video-error\",\"args\":[{\"code\":2201}]}�56�5::/webrtc:{\"name\":\"video-error\",\"args\":[{\"code\":2201}]}�56�5::/webrtc:{\"name\":\"video-error\",\"args\":[{\"code\":2201}]}�56�5::/webrtc:{\"name\":\"video-error\",\"args\":[{\"code\":2201}]}�56�5::/webrtc:{\"name\":\"video-error\",\"args\":[{\"code\":2201}]}�56�5::/webrtc:{\"name\":\"video-error\",\"args\":[{\"code\":2201}]}�56�5::/webrtc:{\"name\":\"video-error\",\"args\":[{\"code\":2201}]}�56�5::/webrtc:{\"name\":\"video-error\",\"args\":[{\"code\":2201}]}�56�5::/webrtc:{\"name\":\"video-error\",\"args\":[{\"code\":2201}]}�56�5::/webrtc:{\"name\":\"video-error\",\"args\":[{\"code\":2201}]}�56�5::/webrtc:{\"name\":\"video-error\",\"args\":[{\"code\":2201}]}�56�5::/webrtc:{\"name\":\"video-error\",\"args\":[{\"code\":2201}]}�56�5::/webrtc:{\"name\":\"video-error\",\"args\":[{\"code\":2201}]}�56�5::/webrtc:{\"name\":\"video-error\",\"args\":[{\"code\":2201}]}�56�5::/webrtc:{\"name\":\"video-error\",\"args\":[{\"code\":2201}]}�56�5::/webrtc:{\"name\":\"video-error\",\"args\":[{\"code\":2201}]}�56�5::/webrtc:{\"name\":\"video-error\",\"args\":[{\"code\":2201}]}�56�5::/webrtc:{\"name\":\"video-error\",\"args\":[{\"code\":2201}]}");
+debug: set close timeout for client uSWb1c2rJAFXsR8wP4f2
+debug: discarding transport
+debug: cleared close timeout for client uSWb1c2rJAFXsR8wP4f2
+debug: setting request GET /socket.io/1/jsonp-polling/uSWb1c2rJAFXsR8wP4f2?token=12&t=1396858448704&i=0
+debug: setting poll timeout
+debug: discarding transport
+debug: cleared close timeout for client uSWb1c2rJAFXsR8wP4f2
+info: transport end (undefined)
+debug: set close timeout for client uSWb1c2rJAFXsR8wP4f2
+debug: cleared close timeout for client uSWb1c2rJAFXsR8wP4f2
+Peers: {"11":{}}
+Peer: {}
+Delete chat: 100
+12 has disconnected. Online user number: 0
+debug: discarding transport
+debug: clearing poll timeout
+debug: client authorized
+info: handshake authorized mlm0WInMVExXbrwDP4f3
+debug: setting request GET /socket.io/1/websocket/mlm0WInMVExXbrwDP4f3?token=1212
+debug: set heartbeat interval for client mlm0WInMVExXbrwDP4f3
+debug: client authorized for 
+debug: websocket writing 1::
+1212 authentication passed.
+debug: client authorized for /webrtc
+debug: websocket writing 1::/webrtc
+debug: websocket writing 5::/webrtc:{"name":"server-authenticated","args":[{"uid":"1212"}]}
+A new client has connected. Online user number: 1
+debug: client authorized
+info: handshake authorized RsKs2MypPC32NOteP4f4
+debug: setting request GET /socket.io/1/websocket/RsKs2MypPC32NOteP4f4?token=1111
+debug: set heartbeat interval for client RsKs2MypPC32NOteP4f4
+debug: client authorized for 
+debug: websocket writing 1::
+1111 authentication passed.
+debug: client authorized for /webrtc
+debug: websocket writing 1::/webrtc
+debug: websocket writing 5::/webrtc:{"name":"server-authenticated","args":[{"uid":"1111"}]}
+A new client has connected. Online user number: 2
+debug: websocket writing 5::/webrtc:{"name":"chat-wait"}
+Chat ID: 100, attendee number: 1
+debug: websocket writing 5::/webrtc:{"name":"chat-ready","args":[{"peerId":"1212"}]}
+debug: websocket writing 5::/webrtc:{"name":"chat-ready","args":[{"peerId":"1111"}]}
+debug: websocket writing 5::/webrtc:{"name":"video-invitation","args":[{"from":"1111"}]}
+Chat ID: 100, attendee number: 2
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1212","data":{"sdp":"v=0\r\no=- 7527374606692285864 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE audio video\r\na=msid-semantic: WMS HQ0VprtEUegmkX7Oqsp5IrYuDOHIRDRmMtrl\r\nm=audio 1 RTP/SAVPF 111\r\nc=IN IP4 0.0.0.0\r\na=rtcp:1 IN IP4 0.0.0.0\r\na=ice-ufrag:BoNB7C97oL5uSI6r\r\na=ice-pwd:lC65SbUttH+3zFeOUHCxQ3g2\r\na=ice-options:google-ice\r\na=fingerprint:sha-256 98:B7:15:92:7D:2E:38:AE:15:4B:11:2F:5F:0D:D0:5D:A2:9A:44:42:7A:B1:50:ED:90:20:56:C7:62:69:C3:82\r\na=setup:actpass\r\na=mid:audio\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=sendrecv\r\na=rtcp-mux\r\na=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:aE9BJozLcBmPjcEqWnovrE9zAlsnC1ineh34F/f8\r\na=rtpmap:111 opus/48000/2\r\na=fmtp:111 minptime=10 stereo=1; sprop-stereo=1\r\na=maxptime:60\r\na=ssrc:1219894279 cname:TlFiDZhuuJmzSByL\r\na=ssrc:1219894279 msid:HQ0VprtEUegmkX7Oqsp5IrYuDOHIRDRmMtrl 4d088c52-f346-42f0-bcea-2ebb02ccd5b7\r\na=ssrc:1219894279 mslabel:HQ0VprtEUegmkX7Oqsp5IrYuDOHIRDRmMtrl\r\na=ssrc:1219894279 label:4d088c52-f346-42f0-bcea-2ebb02ccd5b7\r\nm=video 1 RTP/SAVPF 100 116 117\r\nc=IN IP4 0.0.0.0\r\na=rtcp:1 IN IP4 0.0.0.0\r\na=ice-ufrag:BoNB7C97oL5uSI6r\r\na=ice-pwd:lC65SbUttH+3zFeOUHCxQ3g2\r\na=ice-options:google-ice\r\na=fingerprint:sha-256 98:B7:15:92:7D:2E:38:AE:15:4B:11:2F:5F:0D:D0:5D:A2:9A:44:42:7A:B1:50:ED:90:20:56:C7:62:69:C3:82\r\na=setup:actpass\r\na=mid:video\r\na=extmap:2 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:3 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=sendrecv\r\na=rtcp-mux\r\na=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:aE9BJozLcBmPjcEqWnovrE9zAlsnC1ineh34F/f8\r\na=rtpmap:100 VP8/90000\r\na=rtcp-fb:100 ccm fir\r\na=rtcp-fb:100 nack\r\na=rtcp-fb:100 goog-remb\r\na=rtpmap:116 red/90000\r\na=rtpmap:117 ulpfec/90000\r\na=ssrc:2051013531 cname:TlFiDZhuuJmzSByL\r\na=ssrc:2051013531 msid:HQ0VprtEUegmkX7Oqsp5IrYuDOHIRDRmMtrl 81085819-6314-4656-ae6d-f95fff5392de\r\na=ssrc:2051013531 mslabel:HQ0VprtEUegmkX7Oqsp5IrYuDOHIRDRmMtrl\r\na=ssrc:2051013531 label:81085819-6314-4656-ae6d-f95fff5392de\r\n","type":"offer"}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1212","data":{"type":"candidate","candidate":"a=candidate:1840965416 1 udp 2113937151 192.168.0.103 58761 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1212","data":{"type":"candidate","candidate":"a=candidate:1840965416 2 udp 2113937151 192.168.0.103 58761 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1212","data":{"type":"candidate","candidate":"a=candidate:1840965416 1 udp 2113937151 192.168.0.103 58761 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1212","data":{"type":"candidate","candidate":"a=candidate:1840965416 2 udp 2113937151 192.168.0.103 58761 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1212","data":{"type":"candidate","candidate":"a=candidate:2999745851 1 udp 2113937151 192.168.56.1 58762 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1212","data":{"type":"candidate","candidate":"a=candidate:2999745851 2 udp 2113937151 192.168.56.1 58762 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1212","data":{"type":"candidate","candidate":"a=candidate:2999745851 1 udp 2113937151 192.168.56.1 58762 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1212","data":{"type":"candidate","candidate":"a=candidate:2999745851 2 udp 2113937151 192.168.56.1 58762 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1212","data":{"type":"candidate","candidate":"a=candidate:3975340444 1 udp 1845501695 116.235.249.228 58761 typ srflx raddr 192.168.0.103 rport 58761 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1212","data":{"type":"candidate","candidate":"a=candidate:3975340444 2 udp 1845501695 116.235.249.228 58761 typ srflx raddr 192.168.0.103 rport 58761 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1212","data":{"type":"candidate","candidate":"a=candidate:3975340444 1 udp 1845501695 116.235.249.228 58761 typ srflx raddr 192.168.0.103 rport 58761 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1212","data":{"type":"candidate","candidate":"a=candidate:3975340444 2 udp 1845501695 116.235.249.228 58761 typ srflx raddr 192.168.0.103 rport 58761 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1212","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 16785151 61.129.90.140 61593 typ relay raddr 116.235.249.228 rport 52409 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1212","data":{"type":"candidate","candidate":"a=candidate:48544373 2 udp 16785151 61.129.90.140 61593 typ relay raddr 116.235.249.228 rport 52409 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1212","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 16785151 61.129.90.140 61593 typ relay raddr 116.235.249.228 rport 52409 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1212","data":{"type":"candidate","candidate":"a=candidate:48544373 2 udp 16785151 61.129.90.140 61593 typ relay raddr 116.235.249.228 rport 52409 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1212","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 16785151 61.129.90.140 64828 typ relay raddr 116.235.249.228 rport 52410 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1212","data":{"type":"candidate","candidate":"a=candidate:48544373 2 udp 16785151 61.129.90.140 64828 typ relay raddr 116.235.249.228 rport 52410 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1212","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 16785151 61.129.90.140 64828 typ relay raddr 116.235.249.228 rport 52410 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1212","data":{"type":"candidate","candidate":"a=candidate:48544373 2 udp 16785151 61.129.90.140 64828 typ relay raddr 116.235.249.228 rport 52410 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1212","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 16785151 61.129.90.140 65053 typ relay raddr 116.235.249.228 rport 52411 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1212","data":{"type":"candidate","candidate":"a=candidate:48544373 2 udp 16785151 61.129.90.140 65053 typ relay raddr 116.235.249.228 rport 52411 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1212","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 16785151 61.129.90.140 65053 typ relay raddr 116.235.249.228 rport 52411 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1212","data":{"type":"candidate","candidate":"a=candidate:48544373 2 udp 16785151 61.129.90.140 65053 typ relay raddr 116.235.249.228 rport 52411 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1212","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 16785151 61.129.90.140 58859 typ relay raddr 116.235.249.228 rport 52412 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1212","data":{"type":"candidate","candidate":"a=candidate:48544373 2 udp 16785151 61.129.90.140 58859 typ relay raddr 116.235.249.228 rport 52412 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1212","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 16785151 61.129.90.140 58859 typ relay raddr 116.235.249.228 rport 52412 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1212","data":{"type":"candidate","candidate":"a=candidate:48544373 2 udp 16785151 61.129.90.140 58859 typ relay raddr 116.235.249.228 rport 52412 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1212","data":{"type":"candidate","candidate":"a=candidate:590945240 1 tcp 1509957375 192.168.0.103 0 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1212","data":{"type":"candidate","candidate":"a=candidate:590945240 2 tcp 1509957375 192.168.0.103 0 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1212","data":{"type":"candidate","candidate":"a=candidate:590945240 1 tcp 1509957375 192.168.0.103 0 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1212","data":{"type":"candidate","candidate":"a=candidate:590945240 2 tcp 1509957375 192.168.0.103 0 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1212","data":{"type":"candidate","candidate":"a=candidate:4233069003 1 tcp 1509957375 192.168.56.1 0 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1212","data":{"type":"candidate","candidate":"a=candidate:4233069003 2 tcp 1509957375 192.168.56.1 0 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+Chat started, attendees: 1111, 1212
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1111","data":{"sdp":"v=0\r\no=- 2496963621918095825 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE audio video\r\na=msid-semantic: WMS OuAhqalTUUoNcd0MJ3s3I9DFhbUr9jDIS756\r\nm=audio 1 RTP/SAVPF 111\r\nc=IN IP4 0.0.0.0\r\na=rtcp:1 IN IP4 0.0.0.0\r\na=ice-ufrag:9b2g/gEAx/u6wTEn\r\na=ice-pwd:Ek3m1riDRhp6ZZuRGzJr5wIA\r\na=fingerprint:sha-256 98:B7:15:92:7D:2E:38:AE:15:4B:11:2F:5F:0D:D0:5D:A2:9A:44:42:7A:B1:50:ED:90:20:56:C7:62:69:C3:82\r\na=setup:active\r\na=mid:audio\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=sendrecv\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=fmtp:111 minptime=10 stereo=1; sprop-stereo=1\r\na=maxptime:60\r\na=ssrc:2860063258 cname:v4DsTtycU0Pbzzrk\r\na=ssrc:2860063258 msid:OuAhqalTUUoNcd0MJ3s3I9DFhbUr9jDIS756 12eea942-1c1f-4c0d-8313-7e0911e3376c\r\na=ssrc:2860063258 mslabel:OuAhqalTUUoNcd0MJ3s3I9DFhbUr9jDIS756\r\na=ssrc:2860063258 label:12eea942-1c1f-4c0d-8313-7e0911e3376c\r\nm=video 1 RTP/SAVPF 100 116 117\r\nc=IN IP4 0.0.0.0\r\na=rtcp:1 IN IP4 0.0.0.0\r\na=ice-ufrag:9b2g/gEAx/u6wTEn\r\na=ice-pwd:Ek3m1riDRhp6ZZuRGzJr5wIA\r\na=fingerprint:sha-256 98:B7:15:92:7D:2E:38:AE:15:4B:11:2F:5F:0D:D0:5D:A2:9A:44:42:7A:B1:50:ED:90:20:56:C7:62:69:C3:82\r\na=setup:active\r\na=mid:video\r\na=extmap:2 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:3 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=sendrecv\r\na=rtcp-mux\r\na=rtpmap:100 VP8/90000\r\na=rtcp-fb:100 ccm fir\r\na=rtcp-fb:100 nack\r\na=rtcp-fb:100 goog-remb\r\na=rtpmap:116 red/90000\r\na=rtpmap:117 ulpfec/90000\r\na=ssrc:2680064053 cname:v4DsTtycU0Pbzzrk\r\na=ssrc:2680064053 msid:OuAhqalTUUoNcd0MJ3s3I9DFhbUr9jDIS756 caf2329a-4a29-4757-9af3-2e71de941513\r\na=ssrc:2680064053 mslabel:OuAhqalTUUoNcd0MJ3s3I9DFhbUr9jDIS756\r\na=ssrc:2680064053 label:caf2329a-4a29-4757-9af3-2e71de941513\r\n","type":"answer"}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1111","data":{"type":"candidate","candidate":"a=candidate:1840965416 1 udp 2113937151 192.168.0.103 58778 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1111","data":{"type":"candidate","candidate":"a=candidate:2999745851 1 udp 2113937151 192.168.56.1 58779 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1111","data":{"type":"candidate","candidate":"a=candidate:1840965416 1 udp 2113937151 192.168.0.103 58778 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1111","data":{"type":"candidate","candidate":"a=candidate:2999745851 1 udp 2113937151 192.168.56.1 58779 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1111","data":{"type":"candidate","candidate":"a=candidate:3975340444 1 udp 1845501695 116.235.249.228 58778 typ srflx raddr 192.168.0.103 rport 58778 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1111","data":{"type":"candidate","candidate":"a=candidate:3975340444 1 udp 1845501695 116.235.249.228 58778 typ srflx raddr 192.168.0.103 rport 58778 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1111","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 33562367 61.129.90.140 49171 typ relay raddr 116.235.249.228 rport 58780 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1212","data":{"type":"candidate","candidate":"a=candidate:4233069003 1 tcp 1509957375 192.168.56.1 0 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1212","data":{"type":"candidate","candidate":"a=candidate:4233069003 2 tcp 1509957375 192.168.56.1 0 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1212","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 33562367 61.129.90.140 62756 typ relay raddr 116.235.249.228 rport 58765 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1212","data":{"type":"candidate","candidate":"a=candidate:48544373 2 udp 33562367 61.129.90.140 62756 typ relay raddr 116.235.249.228 rport 58765 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1212","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 33562367 61.129.90.140 62756 typ relay raddr 116.235.249.228 rport 58765 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1212","data":{"type":"candidate","candidate":"a=candidate:48544373 2 udp 33562367 61.129.90.140 62756 typ relay raddr 116.235.249.228 rport 58765 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1111","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 33562367 61.129.90.140 49171 typ relay raddr 116.235.249.228 rport 58780 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1111","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 16785151 61.129.90.140 53031 typ relay raddr 116.235.249.228 rport 52414 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1111","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 16785151 61.129.90.140 53031 typ relay raddr 116.235.249.228 rport 52414 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1111","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 16785151 61.129.90.140 65006 typ relay raddr 116.235.249.228 rport 52413 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1111","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 16785151 61.129.90.140 65006 typ relay raddr 116.235.249.228 rport 52413 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1111","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 16785151 61.129.90.140 52598 typ relay raddr 116.235.249.228 rport 52415 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1111","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 16785151 61.129.90.140 52598 typ relay raddr 116.235.249.228 rport 52415 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1111","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 16785151 61.129.90.140 59119 typ relay raddr 116.235.249.228 rport 52416 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1111","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 16785151 61.129.90.140 59119 typ relay raddr 116.235.249.228 rport 52416 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1111","data":{"type":"candidate","candidate":"a=candidate:590945240 1 tcp 1509957375 192.168.0.103 0 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1111","data":{"type":"candidate","candidate":"a=candidate:590945240 1 tcp 1509957375 192.168.0.103 0 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1111","data":{"type":"candidate","candidate":"a=candidate:4233069003 1 tcp 1509957375 192.168.56.1 0 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1111","data":{"type":"candidate","candidate":"a=candidate:4233069003 1 tcp 1509957375 192.168.56.1 0 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: emitting heartbeat for client mlm0WInMVExXbrwDP4f3
+debug: websocket writing 2::
+debug: set heartbeat timeout for client mlm0WInMVExXbrwDP4f3
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client mlm0WInMVExXbrwDP4f3
+debug: set heartbeat interval for client mlm0WInMVExXbrwDP4f3
+debug: emitting heartbeat for client RsKs2MypPC32NOteP4f4
+debug: websocket writing 2::
+debug: set heartbeat timeout for client RsKs2MypPC32NOteP4f4
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client RsKs2MypPC32NOteP4f4
+debug: set heartbeat interval for client RsKs2MypPC32NOteP4f4
+info: transport end (undefined)
+debug: set close timeout for client RsKs2MypPC32NOteP4f4
+debug: cleared close timeout for client RsKs2MypPC32NOteP4f4
+debug: cleared heartbeat interval for client RsKs2MypPC32NOteP4f4
+Peers: {"1212":{"cid":1}}
+Peer: {"cid":1}
+Chat stopped, attendees: 1111, 1212, duration: 29s
+debug: websocket writing 5::/webrtc:{"name":"video-stopped","args":[{"from":"1111"}]}
+debug: websocket writing 5::/webrtc:{"name":"chat-wait"}
+Chat ID: 100, attendee number: 1
+1111 has disconnected. Online user number: 1
+debug: discarding transport
+info: transport end (undefined)
+debug: set close timeout for client mlm0WInMVExXbrwDP4f3
+debug: cleared close timeout for client mlm0WInMVExXbrwDP4f3
+debug: cleared heartbeat interval for client mlm0WInMVExXbrwDP4f3
+Peers: {"1111":{"cid":1}}
+Peer: {"cid":1}
+Delete chat: 100
+1212 has disconnected. Online user number: 0
+debug: discarding transport
+debug: client authorized
+info: handshake authorized hUgPfYz6JwEHkx5SP4f5
+debug: setting request GET /socket.io/1/websocket/hUgPfYz6JwEHkx5SP4f5?token=11
+debug: set heartbeat interval for client hUgPfYz6JwEHkx5SP4f5
+debug: client authorized for 
+debug: websocket writing 1::
+11 authentication passed.
+debug: client authorized for /webrtc
+debug: websocket writing 1::/webrtc
+debug: websocket writing 5::/webrtc:{"name":"server-authenticated","args":[{"uid":"11"}]}
+A new client has connected. Online user number: 1
+debug: client authorized
+info: handshake authorized XgEiUk9dhE80zNBYP4f6
+debug: setting request GET /socket.io/1/websocket/XgEiUk9dhE80zNBYP4f6?token=12
+debug: set heartbeat interval for client XgEiUk9dhE80zNBYP4f6
+debug: client authorized for 
+debug: websocket writing 1::
+12 authentication passed.
+debug: client authorized for /webrtc
+debug: websocket writing 1::/webrtc
+debug: websocket writing 5::/webrtc:{"name":"server-authenticated","args":[{"uid":"12"}]}
+A new client has connected. Online user number: 2
+debug: websocket writing 5::/webrtc:{"name":"chat-wait"}
+Chat ID: 100, attendee number: 1
+debug: websocket writing 5::/webrtc:{"name":"chat-ready","args":[{"peerId":"11"}]}
+debug: websocket writing 5::/webrtc:{"name":"chat-ready","args":[{"peerId":"12"}]}
+debug: websocket writing 5::/webrtc:{"name":"video-invitation","args":[{"from":"12"}]}
+Chat ID: 100, attendee number: 2
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"sdp":"v=0\r\no=- 1009335189102108116 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE audio video\r\na=msid-semantic: WMS 2e2pM1V0oFkY36OMv6OqTrtdNNDWHSyZp9ZJ\r\nm=audio 1 RTP/SAVPF 111\r\nc=IN IP4 0.0.0.0\r\na=rtcp:1 IN IP4 0.0.0.0\r\na=ice-ufrag:Txxj/ElgKUBG1thp\r\na=ice-pwd:NktharLg/DMBAYtgFWuxJ07L\r\na=ice-options:google-ice\r\na=fingerprint:sha-256 98:B7:15:92:7D:2E:38:AE:15:4B:11:2F:5F:0D:D0:5D:A2:9A:44:42:7A:B1:50:ED:90:20:56:C7:62:69:C3:82\r\na=setup:actpass\r\na=mid:audio\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=sendrecv\r\na=rtcp-mux\r\na=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:+BG4gT2vRUs6SF6HBVKMCPZzPWIOYyQ1ebwdfDYq\r\na=rtpmap:111 opus/48000/2\r\na=fmtp:111 minptime=10 stereo=1; sprop-stereo=1\r\na=maxptime:60\r\na=ssrc:811172262 cname:ddMP3le2UCbev7zY\r\na=ssrc:811172262 msid:2e2pM1V0oFkY36OMv6OqTrtdNNDWHSyZp9ZJ 2b945bf2-d959-4b54-a929-752e2a051ce5\r\na=ssrc:811172262 mslabel:2e2pM1V0oFkY36OMv6OqTrtdNNDWHSyZp9ZJ\r\na=ssrc:811172262 label:2b945bf2-d959-4b54-a929-752e2a051ce5\r\nm=video 1 RTP/SAVPF 100 116 117\r\nc=IN IP4 0.0.0.0\r\na=rtcp:1 IN IP4 0.0.0.0\r\na=ice-ufrag:Txxj/ElgKUBG1thp\r\na=ice-pwd:NktharLg/DMBAYtgFWuxJ07L\r\na=ice-options:google-ice\r\na=fingerprint:sha-256 98:B7:15:92:7D:2E:38:AE:15:4B:11:2F:5F:0D:D0:5D:A2:9A:44:42:7A:B1:50:ED:90:20:56:C7:62:69:C3:82\r\na=setup:actpass\r\na=mid:video\r\na=extmap:2 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:3 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=sendrecv\r\na=rtcp-mux\r\na=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:+BG4gT2vRUs6SF6HBVKMCPZzPWIOYyQ1ebwdfDYq\r\na=rtpmap:100 VP8/90000\r\na=rtcp-fb:100 ccm fir\r\na=rtcp-fb:100 nack\r\na=rtcp-fb:100 goog-remb\r\na=rtpmap:116 red/90000\r\na=rtpmap:117 ulpfec/90000\r\na=ssrc:54997957 cname:ddMP3le2UCbev7zY\r\na=ssrc:54997957 msid:2e2pM1V0oFkY36OMv6OqTrtdNNDWHSyZp9ZJ 7dcaf675-ffb6-4a0c-8333-14d2b3b3a35a\r\na=ssrc:54997957 mslabel:2e2pM1V0oFkY36OMv6OqTrtdNNDWHSyZp9ZJ\r\na=ssrc:54997957 label:7dcaf675-ffb6-4a0c-8333-14d2b3b3a35a\r\n","type":"offer"}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:1840965416 1 udp 2113937151 192.168.0.103 62477 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:1840965416 2 udp 2113937151 192.168.0.103 62477 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:1840965416 1 udp 2113937151 192.168.0.103 62477 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:1840965416 2 udp 2113937151 192.168.0.103 62477 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:2999745851 1 udp 2113937151 192.168.56.1 62478 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:2999745851 2 udp 2113937151 192.168.56.1 62478 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:2999745851 1 udp 2113937151 192.168.56.1 62478 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:2999745851 2 udp 2113937151 192.168.56.1 62478 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:3975340444 1 udp 1845501695 116.235.249.228 62477 typ srflx raddr 192.168.0.103 rport 62477 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:3975340444 2 udp 1845501695 116.235.249.228 62477 typ srflx raddr 192.168.0.103 rport 62477 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:3975340444 1 udp 1845501695 116.235.249.228 62477 typ srflx raddr 192.168.0.103 rport 62477 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:3975340444 2 udp 1845501695 116.235.249.228 62477 typ srflx raddr 192.168.0.103 rport 62477 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 16785151 61.129.90.140 54976 typ relay raddr 116.235.249.228 rport 52434 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:48544373 2 udp 16785151 61.129.90.140 54976 typ relay raddr 116.235.249.228 rport 52434 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 16785151 61.129.90.140 61979 typ relay raddr 116.235.249.228 rport 52435 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:48544373 2 udp 16785151 61.129.90.140 61979 typ relay raddr 116.235.249.228 rport 52435 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 16785151 61.129.90.140 58635 typ relay raddr 116.235.249.228 rport 52436 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:48544373 2 udp 16785151 61.129.90.140 58635 typ relay raddr 116.235.249.228 rport 52436 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 16785151 61.129.90.140 54976 typ relay raddr 116.235.249.228 rport 52434 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:48544373 2 udp 16785151 61.129.90.140 54976 typ relay raddr 116.235.249.228 rport 52434 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 16785151 61.129.90.140 61979 typ relay raddr 116.235.249.228 rport 52435 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:48544373 2 udp 16785151 61.129.90.140 61979 typ relay raddr 116.235.249.228 rport 52435 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 16785151 61.129.90.140 58635 typ relay raddr 116.235.249.228 rport 52436 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:48544373 2 udp 16785151 61.129.90.140 58635 typ relay raddr 116.235.249.228 rport 52436 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 16785151 61.129.90.140 58651 typ relay raddr 116.235.249.228 rport 52437 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:48544373 2 udp 16785151 61.129.90.140 58651 typ relay raddr 116.235.249.228 rport 52437 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 16785151 61.129.90.140 58651 typ relay raddr 116.235.249.228 rport 52437 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:48544373 2 udp 16785151 61.129.90.140 58651 typ relay raddr 116.235.249.228 rport 52437 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:590945240 1 tcp 1509957375 192.168.0.103 0 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:590945240 2 tcp 1509957375 192.168.0.103 0 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:4233069003 1 tcp 1509957375 192.168.56.1 0 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:4233069003 2 tcp 1509957375 192.168.56.1 0 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:590945240 1 tcp 1509957375 192.168.0.103 0 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:590945240 2 tcp 1509957375 192.168.0.103 0 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:4233069003 1 tcp 1509957375 192.168.56.1 0 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:4233069003 2 tcp 1509957375 192.168.56.1 0 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+Chat started, attendees: 12, 11
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"12","data":{"sdp":"v=0\r\no=- 6036992441104821129 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE audio video\r\na=msid-semantic: WMS hXFE6xAD8Ck20W293a69ECthNxxoSvE2xNSe\r\nm=audio 1 RTP/SAVPF 111\r\nc=IN IP4 0.0.0.0\r\na=rtcp:1 IN IP4 0.0.0.0\r\na=ice-ufrag:SD1cnXzgHHwjlJwG\r\na=ice-pwd:ZfNjeNOoNOirciWWy70jkU4b\r\na=fingerprint:sha-256 98:B7:15:92:7D:2E:38:AE:15:4B:11:2F:5F:0D:D0:5D:A2:9A:44:42:7A:B1:50:ED:90:20:56:C7:62:69:C3:82\r\na=setup:active\r\na=mid:audio\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=sendrecv\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=fmtp:111 minptime=10 stereo=1; sprop-stereo=1\r\na=maxptime:60\r\na=ssrc:2436111915 cname:6kKO9l1jiWDivMlE\r\na=ssrc:2436111915 msid:hXFE6xAD8Ck20W293a69ECthNxxoSvE2xNSe a3c42cdd-2301-4b3a-b241-37fc6819153f\r\na=ssrc:2436111915 mslabel:hXFE6xAD8Ck20W293a69ECthNxxoSvE2xNSe\r\na=ssrc:2436111915 label:a3c42cdd-2301-4b3a-b241-37fc6819153f\r\nm=video 1 RTP/SAVPF 100 116 117\r\nc=IN IP4 0.0.0.0\r\na=rtcp:1 IN IP4 0.0.0.0\r\na=ice-ufrag:SD1cnXzgHHwjlJwG\r\na=ice-pwd:ZfNjeNOoNOirciWWy70jkU4b\r\na=fingerprint:sha-256 98:B7:15:92:7D:2E:38:AE:15:4B:11:2F:5F:0D:D0:5D:A2:9A:44:42:7A:B1:50:ED:90:20:56:C7:62:69:C3:82\r\na=setup:active\r\na=mid:video\r\na=extmap:2 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:3 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=sendrecv\r\na=rtcp-mux\r\na=rtpmap:100 VP8/90000\r\na=rtcp-fb:100 ccm fir\r\na=rtcp-fb:100 nack\r\na=rtcp-fb:100 goog-remb\r\na=rtpmap:116 red/90000\r\na=rtpmap:117 ulpfec/90000\r\na=ssrc:1035390515 cname:6kKO9l1jiWDivMlE\r\na=ssrc:1035390515 msid:hXFE6xAD8Ck20W293a69ECthNxxoSvE2xNSe 782e569b-b8a4-43b7-bb84-012fbb19a313\r\na=ssrc:1035390515 mslabel:hXFE6xAD8Ck20W293a69ECthNxxoSvE2xNSe\r\na=ssrc:1035390515 label:782e569b-b8a4-43b7-bb84-012fbb19a313\r\n","type":"answer"}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"12","data":{"type":"candidate","candidate":"a=candidate:1840965416 1 udp 2113937151 192.168.0.103 62494 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"12","data":{"type":"candidate","candidate":"a=candidate:2999745851 1 udp 2113937151 192.168.56.1 62495 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"12","data":{"type":"candidate","candidate":"a=candidate:1840965416 1 udp 2113937151 192.168.0.103 62494 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"12","data":{"type":"candidate","candidate":"a=candidate:2999745851 1 udp 2113937151 192.168.56.1 62495 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"12","data":{"type":"candidate","candidate":"a=candidate:3975340444 1 udp 1845501695 116.235.249.228 62494 typ srflx raddr 192.168.0.103 rport 62494 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"12","data":{"type":"candidate","candidate":"a=candidate:3975340444 1 udp 1845501695 116.235.249.228 62494 typ srflx raddr 192.168.0.103 rport 62494 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"12","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 16785151 61.129.90.140 56753 typ relay raddr 116.235.249.228 rport 52438 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 33562367 61.129.90.140 61999 typ relay raddr 116.235.249.228 rport 62481 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:48544373 2 udp 33562367 61.129.90.140 61999 typ relay raddr 116.235.249.228 rport 62481 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 33562367 61.129.90.140 61999 typ relay raddr 116.235.249.228 rport 62481 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:48544373 2 udp 33562367 61.129.90.140 61999 typ relay raddr 116.235.249.228 rport 62481 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"12","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 16785151 61.129.90.140 56753 typ relay raddr 116.235.249.228 rport 52438 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"12","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 16785151 61.129.90.140 53662 typ relay raddr 116.235.249.228 rport 52439 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"12","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 16785151 61.129.90.140 53662 typ relay raddr 116.235.249.228 rport 52439 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"12","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 16785151 61.129.90.140 59052 typ relay raddr 116.235.249.228 rport 52440 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"12","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 16785151 61.129.90.140 49750 typ relay raddr 116.235.249.228 rport 52441 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"12","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 16785151 61.129.90.140 59052 typ relay raddr 116.235.249.228 rport 52440 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"12","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 16785151 61.129.90.140 49750 typ relay raddr 116.235.249.228 rport 52441 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"12","data":{"type":"candidate","candidate":"a=candidate:590945240 1 tcp 1509957375 192.168.0.103 0 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"12","data":{"type":"candidate","candidate":"a=candidate:590945240 1 tcp 1509957375 192.168.0.103 0 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"12","data":{"type":"candidate","candidate":"a=candidate:4233069003 1 tcp 1509957375 192.168.56.1 0 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"12","data":{"type":"candidate","candidate":"a=candidate:4233069003 1 tcp 1509957375 192.168.56.1 0 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"12","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 33562367 61.129.90.140 60482 typ relay raddr 116.235.249.228 rport 62496 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"12","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 33562367 61.129.90.140 60482 typ relay raddr 116.235.249.228 rport 62496 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+info: transport end (undefined)
+debug: set close timeout for client XgEiUk9dhE80zNBYP4f6
+debug: cleared close timeout for client XgEiUk9dhE80zNBYP4f6
+debug: cleared heartbeat interval for client XgEiUk9dhE80zNBYP4f6
+Peers: {"11":{"cid":2}}
+Peer: {"cid":2}
+Chat stopped, attendees: 12, 11, duration: 8s
+debug: websocket writing 5::/webrtc:{"name":"video-stopped","args":[{"from":"12"}]}
+debug: websocket writing 5::/webrtc:{"name":"chat-wait"}
+Chat ID: 100, attendee number: 1
+12 has disconnected. Online user number: 1
+debug: discarding transport
+info: transport end (undefined)
+debug: set close timeout for client hUgPfYz6JwEHkx5SP4f5
+debug: cleared close timeout for client hUgPfYz6JwEHkx5SP4f5
+debug: cleared heartbeat interval for client hUgPfYz6JwEHkx5SP4f5
+Peers: {"12":{"cid":2}}
+Peer: {"cid":2}
+Delete chat: 100
+11 has disconnected. Online user number: 0
+debug: discarding transport
+debug: client authorized
+info: handshake authorized hmi4z1Idc9x9ChjwP4f7
+debug: setting request GET /socket.io/1/websocket/hmi4z1Idc9x9ChjwP4f7?token=11
+debug: set heartbeat interval for client hmi4z1Idc9x9ChjwP4f7
+debug: client authorized for 
+debug: websocket writing 1::
+11 authentication passed.
+debug: client authorized for /webrtc
+debug: websocket writing 1::/webrtc
+debug: websocket writing 5::/webrtc:{"name":"server-authenticated","args":[{"uid":"11"}]}
+A new client has connected. Online user number: 1
+debug: client authorized
+info: handshake authorized KUn3Qz36hGriJrEIP4f8
+debug: setting request GET /socket.io/1/websocket/KUn3Qz36hGriJrEIP4f8?token=12
+debug: set heartbeat interval for client KUn3Qz36hGriJrEIP4f8
+debug: client authorized for 
+debug: websocket writing 1::
+12 authentication passed.
+debug: client authorized for /webrtc
+debug: websocket writing 1::/webrtc
+debug: websocket writing 5::/webrtc:{"name":"server-authenticated","args":[{"uid":"12"}]}
+A new client has connected. Online user number: 2
+debug: websocket writing 5::/webrtc:{"name":"chat-wait"}
+Chat ID: 100, attendee number: 1
+debug: websocket writing 5::/webrtc:{"name":"chat-ready","args":[{"peerId":"11"}]}
+debug: websocket writing 5::/webrtc:{"name":"chat-ready","args":[{"peerId":"12"}]}
+debug: websocket writing 5::/webrtc:{"name":"video-invitation","args":[{"from":"12"}]}
+Chat ID: 100, attendee number: 2
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"sdp":"v=0\r\no=- 514089931658532583 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE audio video\r\na=msid-semantic: WMS 8vfojPkeKzXHCUhzrjlg35HAmwpynS4SCyFe\r\nm=audio 1 RTP/SAVPF 111\r\nc=IN IP4 0.0.0.0\r\na=rtcp:1 IN IP4 0.0.0.0\r\na=ice-ufrag:q0Ihn9V5hfCfrVCM\r\na=ice-pwd:PEHVhQ3p9TvJiJJPEIUF6cBh\r\na=ice-options:google-ice\r\na=fingerprint:sha-256 98:B7:15:92:7D:2E:38:AE:15:4B:11:2F:5F:0D:D0:5D:A2:9A:44:42:7A:B1:50:ED:90:20:56:C7:62:69:C3:82\r\na=setup:actpass\r\na=mid:audio\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=sendrecv\r\na=rtcp-mux\r\na=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:djaFJaqFrfOtG+pdo/2vXGByzWeChUt2b+xezRWZ\r\na=rtpmap:111 opus/48000/2\r\na=fmtp:111 minptime=10 stereo=1; sprop-stereo=1\r\na=maxptime:60\r\na=ssrc:2308000467 cname:MRINPtJ3Cd0QFVAM\r\na=ssrc:2308000467 msid:8vfojPkeKzXHCUhzrjlg35HAmwpynS4SCyFe 5ab3b684-a80b-4cb7-a012-1815653acfe6\r\na=ssrc:2308000467 mslabel:8vfojPkeKzXHCUhzrjlg35HAmwpynS4SCyFe\r\na=ssrc:2308000467 label:5ab3b684-a80b-4cb7-a012-1815653acfe6\r\nm=video 1 RTP/SAVPF 100 116 117\r\nc=IN IP4 0.0.0.0\r\na=rtcp:1 IN IP4 0.0.0.0\r\na=ice-ufrag:q0Ihn9V5hfCfrVCM\r\na=ice-pwd:PEHVhQ3p9TvJiJJPEIUF6cBh\r\na=ice-options:google-ice\r\na=fingerprint:sha-256 98:B7:15:92:7D:2E:38:AE:15:4B:11:2F:5F:0D:D0:5D:A2:9A:44:42:7A:B1:50:ED:90:20:56:C7:62:69:C3:82\r\na=setup:actpass\r\na=mid:video\r\na=extmap:2 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:3 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=sendrecv\r\na=rtcp-mux\r\na=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:djaFJaqFrfOtG+pdo/2vXGByzWeChUt2b+xezRWZ\r\na=rtpmap:100 VP8/90000\r\na=rtcp-fb:100 ccm fir\r\na=rtcp-fb:100 nack\r\na=rtcp-fb:100 goog-remb\r\na=rtpmap:116 red/90000\r\na=rtpmap:117 ulpfec/90000\r\na=ssrc:3030208011 cname:MRINPtJ3Cd0QFVAM\r\na=ssrc:3030208011 msid:8vfojPkeKzXHCUhzrjlg35HAmwpynS4SCyFe a5660048-6221-47e7-bbbf-3ffe01ed018c\r\na=ssrc:3030208011 mslabel:8vfojPkeKzXHCUhzrjlg35HAmwpynS4SCyFe\r\na=ssrc:3030208011 label:a5660048-6221-47e7-bbbf-3ffe01ed018c\r\n","type":"offer"}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:1840965416 1 udp 2113937151 192.168.0.103 57906 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:1840965416 2 udp 2113937151 192.168.0.103 57906 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:2999745851 1 udp 2113937151 192.168.56.1 57907 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:2999745851 2 udp 2113937151 192.168.56.1 57907 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:1840965416 1 udp 2113937151 192.168.0.103 57906 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:1840965416 2 udp 2113937151 192.168.0.103 57906 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:2999745851 1 udp 2113937151 192.168.56.1 57907 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:2999745851 2 udp 2113937151 192.168.56.1 57907 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:3975340444 1 udp 1845501695 116.235.249.228 57906 typ srflx raddr 192.168.0.103 rport 57906 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:3975340444 2 udp 1845501695 116.235.249.228 57906 typ srflx raddr 192.168.0.103 rport 57906 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:3975340444 1 udp 1845501695 116.235.249.228 57906 typ srflx raddr 192.168.0.103 rport 57906 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:3975340444 2 udp 1845501695 116.235.249.228 57906 typ srflx raddr 192.168.0.103 rport 57906 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 16785151 61.129.90.140 60385 typ relay raddr 116.235.249.228 rport 52502 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:48544373 2 udp 16785151 61.129.90.140 60385 typ relay raddr 116.235.249.228 rport 52502 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 16785151 61.129.90.140 60385 typ relay raddr 116.235.249.228 rport 52502 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:48544373 2 udp 16785151 61.129.90.140 60385 typ relay raddr 116.235.249.228 rport 52502 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 16785151 61.129.90.140 64417 typ relay raddr 116.235.249.228 rport 52504 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:48544373 2 udp 16785151 61.129.90.140 64417 typ relay raddr 116.235.249.228 rport 52504 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 16785151 61.129.90.140 64417 typ relay raddr 116.235.249.228 rport 52504 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:48544373 2 udp 16785151 61.129.90.140 64417 typ relay raddr 116.235.249.228 rport 52504 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 16785151 61.129.90.140 52534 typ relay raddr 116.235.249.228 rport 52503 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:48544373 2 udp 16785151 61.129.90.140 52534 typ relay raddr 116.235.249.228 rport 52503 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 16785151 61.129.90.140 49547 typ relay raddr 116.235.249.228 rport 52501 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:48544373 2 udp 16785151 61.129.90.140 49547 typ relay raddr 116.235.249.228 rport 52501 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 16785151 61.129.90.140 52534 typ relay raddr 116.235.249.228 rport 52503 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:48544373 2 udp 16785151 61.129.90.140 52534 typ relay raddr 116.235.249.228 rport 52503 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 16785151 61.129.90.140 49547 typ relay raddr 116.235.249.228 rport 52501 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:48544373 2 udp 16785151 61.129.90.140 49547 typ relay raddr 116.235.249.228 rport 52501 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:590945240 1 tcp 1509957375 192.168.0.103 0 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:590945240 2 tcp 1509957375 192.168.0.103 0 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:4233069003 1 tcp 1509957375 192.168.56.1 0 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:4233069003 2 tcp 1509957375 192.168.56.1 0 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:590945240 1 tcp 1509957375 192.168.0.103 0 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:590945240 2 tcp 1509957375 192.168.0.103 0 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:4233069003 1 tcp 1509957375 192.168.56.1 0 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:4233069003 2 tcp 1509957375 192.168.56.1 0 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 33562367 61.129.90.140 63057 typ relay raddr 116.235.249.228 rport 57908 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:48544373 2 udp 33562367 61.129.90.140 63057 typ relay raddr 116.235.249.228 rport 57908 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 33562367 61.129.90.140 63057 typ relay raddr 116.235.249.228 rport 57908 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:48544373 2 udp 33562367 61.129.90.140 63057 typ relay raddr 116.235.249.228 rport 57908 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+Chat started, attendees: 12, 11
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"12","data":{"sdp":"v=0\r\no=- 3121521804644136820 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE audio video\r\na=msid-semantic: WMS yBamOpk4BfysL7OrYYZxDlSRn8yrl1ncvYTq\r\nm=audio 1 RTP/SAVPF 111\r\nc=IN IP4 0.0.0.0\r\na=rtcp:1 IN IP4 0.0.0.0\r\na=ice-ufrag:PUSVGHluiBHgKIMB\r\na=ice-pwd:FZv4bpea52FpX1+C1b9vH+tF\r\na=fingerprint:sha-256 98:B7:15:92:7D:2E:38:AE:15:4B:11:2F:5F:0D:D0:5D:A2:9A:44:42:7A:B1:50:ED:90:20:56:C7:62:69:C3:82\r\na=setup:active\r\na=mid:audio\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=sendrecv\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=fmtp:111 minptime=10 stereo=1; sprop-stereo=1\r\na=maxptime:60\r\na=ssrc:3102907252 cname:qTw05dLNTA2jJQmC\r\na=ssrc:3102907252 msid:yBamOpk4BfysL7OrYYZxDlSRn8yrl1ncvYTq d02e3785-33eb-4de2-91f5-6b02ba7411e4\r\na=ssrc:3102907252 mslabel:yBamOpk4BfysL7OrYYZxDlSRn8yrl1ncvYTq\r\na=ssrc:3102907252 label:d02e3785-33eb-4de2-91f5-6b02ba7411e4\r\nm=video 1 RTP/SAVPF 100 116 117\r\nc=IN IP4 0.0.0.0\r\na=rtcp:1 IN IP4 0.0.0.0\r\na=ice-ufrag:PUSVGHluiBHgKIMB\r\na=ice-pwd:FZv4bpea52FpX1+C1b9vH+tF\r\na=fingerprint:sha-256 98:B7:15:92:7D:2E:38:AE:15:4B:11:2F:5F:0D:D0:5D:A2:9A:44:42:7A:B1:50:ED:90:20:56:C7:62:69:C3:82\r\na=setup:active\r\na=mid:video\r\na=extmap:2 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:3 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=sendrecv\r\na=rtcp-mux\r\na=rtpmap:100 VP8/90000\r\na=rtcp-fb:100 ccm fir\r\na=rtcp-fb:100 nack\r\na=rtcp-fb:100 goog-remb\r\na=rtpmap:116 red/90000\r\na=rtpmap:117 ulpfec/90000\r\na=ssrc:1044467712 cname:qTw05dLNTA2jJQmC\r\na=ssrc:1044467712 msid:yBamOpk4BfysL7OrYYZxDlSRn8yrl1ncvYTq 54608096-cce1-4677-99c4-474d3012e775\r\na=ssrc:1044467712 mslabel:yBamOpk4BfysL7OrYYZxDlSRn8yrl1ncvYTq\r\na=ssrc:1044467712 label:54608096-cce1-4677-99c4-474d3012e775\r\n","type":"answer"}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"12","data":{"type":"candidate","candidate":"a=candidate:1840965416 1 udp 2113937151 192.168.0.103 57921 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"12","data":{"type":"candidate","candidate":"a=candidate:2999745851 1 udp 2113937151 192.168.56.1 57922 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"12","data":{"type":"candidate","candidate":"a=candidate:3975340444 1 udp 1845501695 116.235.249.228 57921 typ srflx raddr 192.168.0.103 rport 57921 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"12","data":{"type":"candidate","candidate":"a=candidate:1840965416 1 udp 2113937151 192.168.0.103 57921 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"12","data":{"type":"candidate","candidate":"a=candidate:2999745851 1 udp 2113937151 192.168.56.1 57922 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"12","data":{"type":"candidate","candidate":"a=candidate:3975340444 1 udp 1845501695 116.235.249.228 57921 typ srflx raddr 192.168.0.103 rport 57921 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"12","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 16785151 61.129.90.140 64090 typ relay raddr 116.235.249.228 rport 52506 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"12","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 16785151 61.129.90.140 64090 typ relay raddr 116.235.249.228 rport 52506 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"12","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 16785151 61.129.90.140 53981 typ relay raddr 116.235.249.228 rport 52505 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"12","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 16785151 61.129.90.140 53981 typ relay raddr 116.235.249.228 rport 52505 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"12","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 16785151 61.129.90.140 60634 typ relay raddr 116.235.249.228 rport 52508 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"12","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 16785151 61.129.90.140 60634 typ relay raddr 116.235.249.228 rport 52508 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"12","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 16785151 61.129.90.140 58002 typ relay raddr 116.235.249.228 rport 52507 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"12","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 16785151 61.129.90.140 58002 typ relay raddr 116.235.249.228 rport 52507 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"12","data":{"type":"candidate","candidate":"a=candidate:590945240 1 tcp 1509957375 192.168.0.103 0 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"12","data":{"type":"candidate","candidate":"a=candidate:590945240 1 tcp 1509957375 192.168.0.103 0 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"12","data":{"type":"candidate","candidate":"a=candidate:4233069003 1 tcp 1509957375 192.168.56.1 0 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"12","data":{"type":"candidate","candidate":"a=candidate:4233069003 1 tcp 1509957375 192.168.56.1 0 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"12","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 33562367 61.129.90.140 49745 typ relay raddr 116.235.249.228 rport 57925 generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"12","data":{"type":"candidate","candidate":"a=candidate:48544373 1 udp 33562367 61.129.90.140 49745 typ relay raddr 116.235.249.228 rport 57925 generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: emitting heartbeat for client hmi4z1Idc9x9ChjwP4f7
+debug: websocket writing 2::
+debug: set heartbeat timeout for client hmi4z1Idc9x9ChjwP4f7
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client hmi4z1Idc9x9ChjwP4f7
+debug: set heartbeat interval for client hmi4z1Idc9x9ChjwP4f7
+debug: emitting heartbeat for client KUn3Qz36hGriJrEIP4f8
+debug: websocket writing 2::
+debug: set heartbeat timeout for client KUn3Qz36hGriJrEIP4f8
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client KUn3Qz36hGriJrEIP4f8
+debug: set heartbeat interval for client KUn3Qz36hGriJrEIP4f8
+info: transport end (undefined)
+debug: set close timeout for client KUn3Qz36hGriJrEIP4f8
+debug: cleared close timeout for client KUn3Qz36hGriJrEIP4f8
+debug: cleared heartbeat interval for client KUn3Qz36hGriJrEIP4f8
+Peers: {"11":{"cid":3}}
+Peer: {"cid":3}
+Chat stopped, attendees: 12, 11, duration: 24s
+debug: websocket writing 5::/webrtc:{"name":"video-stopped","args":[{"from":"12"}]}
+debug: websocket writing 5::/webrtc:{"name":"chat-wait"}
+Chat ID: 100, attendee number: 1
+12 has disconnected. Online user number: 1
+debug: discarding transport
+info: transport end (undefined)
+debug: set close timeout for client hmi4z1Idc9x9ChjwP4f7
+debug: cleared close timeout for client hmi4z1Idc9x9ChjwP4f7
+debug: cleared heartbeat interval for client hmi4z1Idc9x9ChjwP4f7
+Peers: {"12":{"cid":3}}
+Peer: {"cid":3}
+Delete chat: 100
+11 has disconnected. Online user number: 0
+debug: discarding transport
+debug: client authorized
+info: handshake authorized oZhwdl8_3sUAsXu7P4f9
+debug: setting request GET /socket.io/1/websocket/oZhwdl8_3sUAsXu7P4f9?token=123
+debug: set heartbeat interval for client oZhwdl8_3sUAsXu7P4f9
+debug: client authorized for 
+debug: websocket writing 1::
+123 authentication passed.
+debug: client authorized for /webrtc
+debug: websocket writing 1::/webrtc
+debug: websocket writing 5::/webrtc:{"name":"server-authenticated","args":[{"uid":"123"}]}
+A new client has connected. Online user number: 1
+debug: emitting heartbeat for client oZhwdl8_3sUAsXu7P4f9
+debug: websocket writing 2::
+debug: set heartbeat timeout for client oZhwdl8_3sUAsXu7P4f9
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client oZhwdl8_3sUAsXu7P4f9
+debug: set heartbeat interval for client oZhwdl8_3sUAsXu7P4f9
+debug: emitting heartbeat for client oZhwdl8_3sUAsXu7P4f9
+debug: websocket writing 2::
+debug: set heartbeat timeout for client oZhwdl8_3sUAsXu7P4f9
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client oZhwdl8_3sUAsXu7P4f9
+debug: set heartbeat interval for client oZhwdl8_3sUAsXu7P4f9
+debug: emitting heartbeat for client oZhwdl8_3sUAsXu7P4f9
+debug: websocket writing 2::
+debug: set heartbeat timeout for client oZhwdl8_3sUAsXu7P4f9
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client oZhwdl8_3sUAsXu7P4f9
+debug: set heartbeat interval for client oZhwdl8_3sUAsXu7P4f9
+debug: websocket writing 5::/webrtc:{"name":"chat-wait"}
+Chat ID: 100, attendee number: 1
+debug: emitting heartbeat for client oZhwdl8_3sUAsXu7P4f9
+debug: websocket writing 2::
+debug: set heartbeat timeout for client oZhwdl8_3sUAsXu7P4f9
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client oZhwdl8_3sUAsXu7P4f9
+debug: set heartbeat interval for client oZhwdl8_3sUAsXu7P4f9
+debug: emitting heartbeat for client oZhwdl8_3sUAsXu7P4f9
+debug: websocket writing 2::
+debug: set heartbeat timeout for client oZhwdl8_3sUAsXu7P4f9
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client oZhwdl8_3sUAsXu7P4f9
+debug: set heartbeat interval for client oZhwdl8_3sUAsXu7P4f9
+debug: emitting heartbeat for client oZhwdl8_3sUAsXu7P4f9
+debug: websocket writing 2::
+debug: set heartbeat timeout for client oZhwdl8_3sUAsXu7P4f9
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client oZhwdl8_3sUAsXu7P4f9
+debug: set heartbeat interval for client oZhwdl8_3sUAsXu7P4f9
+debug: emitting heartbeat for client oZhwdl8_3sUAsXu7P4f9
+debug: websocket writing 2::
+debug: set heartbeat timeout for client oZhwdl8_3sUAsXu7P4f9
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client oZhwdl8_3sUAsXu7P4f9
+debug: set heartbeat interval for client oZhwdl8_3sUAsXu7P4f9
+debug: emitting heartbeat for client oZhwdl8_3sUAsXu7P4f9
+debug: websocket writing 2::
+debug: set heartbeat timeout for client oZhwdl8_3sUAsXu7P4f9
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client oZhwdl8_3sUAsXu7P4f9
+debug: set heartbeat interval for client oZhwdl8_3sUAsXu7P4f9
+debug: emitting heartbeat for client oZhwdl8_3sUAsXu7P4f9
+debug: websocket writing 2::
+debug: set heartbeat timeout for client oZhwdl8_3sUAsXu7P4f9
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client oZhwdl8_3sUAsXu7P4f9
+debug: set heartbeat interval for client oZhwdl8_3sUAsXu7P4f9
+debug: client authorized
+info: handshake authorized BswklLvsNMYh3Mn-P4f-
+debug: setting request GET /socket.io/1/websocket/BswklLvsNMYh3Mn-P4f-?token=123
+debug: set heartbeat interval for client BswklLvsNMYh3Mn-P4f-
+debug: client authorized for 
+debug: websocket writing 1::
+123 authentication passed.
+debug: client authorized for /webrtc
+debug: websocket writing 1::/webrtc
+info: booting client
+debug: websocket writing 0::/webrtc
+Peers: {}
+Delete chat: 100
+123 has disconnected. Online user number: 0
+Force disconnected 123
+debug: websocket writing 5::/webrtc:{"name":"server-authenticated","args":[{"uid":"123"}]}
+A new client has connected. Online user number: 1
+debug: emitting heartbeat for client oZhwdl8_3sUAsXu7P4f9
+debug: websocket writing 2::
+debug: set heartbeat timeout for client oZhwdl8_3sUAsXu7P4f9
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client oZhwdl8_3sUAsXu7P4f9
+debug: set heartbeat interval for client oZhwdl8_3sUAsXu7P4f9
+debug: websocket writing 5::/webrtc:{"name":"chat-wait"}
+Chat ID: 100, attendee number: 1
+debug: emitting heartbeat for client BswklLvsNMYh3Mn-P4f-
+debug: websocket writing 2::
+debug: set heartbeat timeout for client BswklLvsNMYh3Mn-P4f-
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client BswklLvsNMYh3Mn-P4f-
+debug: set heartbeat interval for client BswklLvsNMYh3Mn-P4f-
+debug: emitting heartbeat for client oZhwdl8_3sUAsXu7P4f9
+debug: websocket writing 2::
+debug: set heartbeat timeout for client oZhwdl8_3sUAsXu7P4f9
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client oZhwdl8_3sUAsXu7P4f9
+debug: set heartbeat interval for client oZhwdl8_3sUAsXu7P4f9
+debug: emitting heartbeat for client BswklLvsNMYh3Mn-P4f-
+debug: websocket writing 2::
+debug: set heartbeat timeout for client BswklLvsNMYh3Mn-P4f-
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client BswklLvsNMYh3Mn-P4f-
+debug: set heartbeat interval for client BswklLvsNMYh3Mn-P4f-
+debug: emitting heartbeat for client oZhwdl8_3sUAsXu7P4f9
+debug: websocket writing 2::
+debug: set heartbeat timeout for client oZhwdl8_3sUAsXu7P4f9
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client oZhwdl8_3sUAsXu7P4f9
+debug: set heartbeat interval for client oZhwdl8_3sUAsXu7P4f9
+debug: emitting heartbeat for client BswklLvsNMYh3Mn-P4f-
+debug: websocket writing 2::
+debug: set heartbeat timeout for client BswklLvsNMYh3Mn-P4f-
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client BswklLvsNMYh3Mn-P4f-
+debug: set heartbeat interval for client BswklLvsNMYh3Mn-P4f-
+debug: emitting heartbeat for client oZhwdl8_3sUAsXu7P4f9
+debug: websocket writing 2::
+debug: set heartbeat timeout for client oZhwdl8_3sUAsXu7P4f9
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client oZhwdl8_3sUAsXu7P4f9
+debug: set heartbeat interval for client oZhwdl8_3sUAsXu7P4f9
+info: transport end (undefined)
+debug: set close timeout for client oZhwdl8_3sUAsXu7P4f9
+debug: cleared close timeout for client oZhwdl8_3sUAsXu7P4f9
+debug: cleared heartbeat interval for client oZhwdl8_3sUAsXu7P4f9
+debug: discarding transport
+info: transport end (undefined)
+debug: set close timeout for client BswklLvsNMYh3Mn-P4f-
+debug: cleared close timeout for client BswklLvsNMYh3Mn-P4f-
+debug: cleared heartbeat interval for client BswklLvsNMYh3Mn-P4f-
+Peers: {}
+Delete chat: 100
+123 has disconnected. Online user number: 0
+debug: discarding transport
+debug: client authorized
+info: handshake authorized eSylOPcyzYwfWi9nP4f_
+debug: setting request GET /socket.io/1/websocket/eSylOPcyzYwfWi9nP4f_?token=11
+debug: set heartbeat interval for client eSylOPcyzYwfWi9nP4f_
+debug: client authorized for 
+debug: websocket writing 1::
+11 authentication passed.
+debug: client authorized for /webrtc
+debug: websocket writing 1::/webrtc
+debug: websocket writing 5::/webrtc:{"name":"server-authenticated","args":[{"uid":"11"}]}
+A new client has connected. Online user number: 1
+debug: client authorized
+info: handshake authorized AusQNc0SNlwALJ0SP4gA
+debug: setting request GET /socket.io/1/websocket/AusQNc0SNlwALJ0SP4gA?token=12
+debug: set heartbeat interval for client AusQNc0SNlwALJ0SP4gA
+debug: client authorized for 
+debug: websocket writing 1::
+12 authentication passed.
+debug: client authorized for /webrtc
+debug: websocket writing 1::/webrtc
+debug: websocket writing 5::/webrtc:{"name":"server-authenticated","args":[{"uid":"12"}]}
+A new client has connected. Online user number: 2
+debug: websocket writing 5::/webrtc:{"name":"chat-wait"}
+Chat ID: 100, attendee number: 1
+debug: websocket writing 5::/webrtc:{"name":"chat-ready","args":[{"peerId":"11"}]}
+debug: websocket writing 5::/webrtc:{"name":"chat-ready","args":[{"peerId":"12"}]}
+debug: websocket writing 5::/webrtc:{"name":"video-invitation","args":[{"from":"12"}]}
+Chat ID: 100, attendee number: 2
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"sdp":"v=0\r\no=- 6775214021974981846 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE audio video\r\na=msid-semantic: WMS NFJJSEiq2rnt0XIGjYIXpxbT28pGd4a7Cg9m\r\nm=audio 1 RTP/SAVPF 111\r\nc=IN IP4 0.0.0.0\r\na=rtcp:1 IN IP4 0.0.0.0\r\na=ice-ufrag:+CzjzTvWAzx1E1gt\r\na=ice-pwd:dFttXde9hMzOGXaxYH5ghZYQ\r\na=ice-options:google-ice\r\na=fingerprint:sha-256 2E:94:5E:7A:B1:E4:58:01:D4:9A:44:E2:84:D4:35:61:8F:AC:81:19:45:D5:69:0D:AB:B8:8D:51:5B:0A:65:26\r\na=setup:actpass\r\na=mid:audio\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=sendrecv\r\na=rtcp-mux\r\na=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:r6lu9w3nBVxaVSrV5wSHxWq4sN58YbB6WZlbLFQb\r\na=rtpmap:111 opus/48000/2\r\na=fmtp:111 minptime=10 stereo=1; sprop-stereo=1\r\na=maxptime:60\r\na=ssrc:2014981198 cname:IhMGDRNh2gMAR3Eg\r\na=ssrc:2014981198 msid:NFJJSEiq2rnt0XIGjYIXpxbT28pGd4a7Cg9m 8da68575-a625-41a0-bd51-59a358130df7\r\na=ssrc:2014981198 mslabel:NFJJSEiq2rnt0XIGjYIXpxbT28pGd4a7Cg9m\r\na=ssrc:2014981198 label:8da68575-a625-41a0-bd51-59a358130df7\r\nm=video 1 RTP/SAVPF 100 116 117\r\nc=IN IP4 0.0.0.0\r\na=rtcp:1 IN IP4 0.0.0.0\r\na=ice-ufrag:+CzjzTvWAzx1E1gt\r\na=ice-pwd:dFttXde9hMzOGXaxYH5ghZYQ\r\na=ice-options:google-ice\r\na=fingerprint:sha-256 2E:94:5E:7A:B1:E4:58:01:D4:9A:44:E2:84:D4:35:61:8F:AC:81:19:45:D5:69:0D:AB:B8:8D:51:5B:0A:65:26\r\na=setup:actpass\r\na=mid:video\r\na=extmap:2 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:3 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=sendrecv\r\na=rtcp-mux\r\na=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:r6lu9w3nBVxaVSrV5wSHxWq4sN58YbB6WZlbLFQb\r\na=rtpmap:100 VP8/90000\r\na=rtcp-fb:100 ccm fir\r\na=rtcp-fb:100 nack\r\na=rtcp-fb:100 goog-remb\r\na=rtpmap:116 red/90000\r\na=rtpmap:117 ulpfec/90000\r\na=ssrc:353651649 cname:IhMGDRNh2gMAR3Eg\r\na=ssrc:353651649 msid:NFJJSEiq2rnt0XIGjYIXpxbT28pGd4a7Cg9m 4cb897c3-a402-4ca0-b96f-511d8e6fbd74\r\na=ssrc:353651649 mslabel:NFJJSEiq2rnt0XIGjYIXpxbT28pGd4a7Cg9m\r\na=ssrc:353651649 label:4cb897c3-a402-4ca0-b96f-511d8e6fbd74\r\n","type":"offer"}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:1841357947 1 udp 2113937151 192.168.0.7 64000 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:1841357947 2 udp 2113937151 192.168.0.7 64000 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:1841357947 1 udp 2113937151 192.168.0.7 64000 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:1841357947 2 udp 2113937151 192.168.0.7 64000 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:591599755 1 tcp 1509957375 192.168.0.7 0 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:591599755 2 tcp 1509957375 192.168.0.7 0 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:591599755 1 tcp 1509957375 192.168.0.7 0 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:591599755 2 tcp 1509957375 192.168.0.7 0 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+Chat started, attendees: 12, 11
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"12","data":{"sdp":"v=0\r\no=- 5793502585611482276 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE audio video\r\na=msid-semantic: WMS BItBRy3cSwiByuY0yo09o7NI03wU1ubHClHW\r\nm=audio 1 RTP/SAVPF 111\r\nc=IN IP4 0.0.0.0\r\na=rtcp:1 IN IP4 0.0.0.0\r\na=ice-ufrag:GPYhV6pfGHNGHZzs\r\na=ice-pwd:kOojGmT6aabQ5YlEZo3FH9TP\r\na=fingerprint:sha-256 2E:94:5E:7A:B1:E4:58:01:D4:9A:44:E2:84:D4:35:61:8F:AC:81:19:45:D5:69:0D:AB:B8:8D:51:5B:0A:65:26\r\na=setup:active\r\na=mid:audio\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=sendrecv\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=fmtp:111 minptime=10 stereo=1; sprop-stereo=1\r\na=maxptime:60\r\na=ssrc:780151881 cname:pg71zTxWyJs7KwSD\r\na=ssrc:780151881 msid:BItBRy3cSwiByuY0yo09o7NI03wU1ubHClHW 3d6c6cc6-3e0e-42bd-b559-851bf487d4fd\r\na=ssrc:780151881 mslabel:BItBRy3cSwiByuY0yo09o7NI03wU1ubHClHW\r\na=ssrc:780151881 label:3d6c6cc6-3e0e-42bd-b559-851bf487d4fd\r\nm=video 1 RTP/SAVPF 100 116 117\r\nc=IN IP4 0.0.0.0\r\na=rtcp:1 IN IP4 0.0.0.0\r\na=ice-ufrag:GPYhV6pfGHNGHZzs\r\na=ice-pwd:kOojGmT6aabQ5YlEZo3FH9TP\r\na=fingerprint:sha-256 2E:94:5E:7A:B1:E4:58:01:D4:9A:44:E2:84:D4:35:61:8F:AC:81:19:45:D5:69:0D:AB:B8:8D:51:5B:0A:65:26\r\na=setup:active\r\na=mid:video\r\na=extmap:2 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:3 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=sendrecv\r\na=rtcp-mux\r\na=rtpmap:100 VP8/90000\r\na=rtcp-fb:100 ccm fir\r\na=rtcp-fb:100 nack\r\na=rtcp-fb:100 goog-remb\r\na=rtpmap:116 red/90000\r\na=rtpmap:117 ulpfec/90000\r\na=ssrc:1680228290 cname:pg71zTxWyJs7KwSD\r\na=ssrc:1680228290 msid:BItBRy3cSwiByuY0yo09o7NI03wU1ubHClHW 4f2b0a84-4ac4-4e16-ac68-629d15eacdb8\r\na=ssrc:1680228290 mslabel:BItBRy3cSwiByuY0yo09o7NI03wU1ubHClHW\r\na=ssrc:1680228290 label:4f2b0a84-4ac4-4e16-ac68-629d15eacdb8\r\n","type":"answer"}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"12","data":{"type":"candidate","candidate":"a=candidate:1841357947 1 udp 2113937151 192.168.0.7 50321 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"12","data":{"type":"candidate","candidate":"a=candidate:1841357947 1 udp 2113937151 192.168.0.7 50321 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"12","data":{"type":"candidate","candidate":"a=candidate:591599755 1 tcp 1509957375 192.168.0.7 0 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"12","data":{"type":"candidate","candidate":"a=candidate:591599755 1 tcp 1509957375 192.168.0.7 0 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: emitting heartbeat for client eSylOPcyzYwfWi9nP4f_
+debug: websocket writing 2::
+debug: set heartbeat timeout for client eSylOPcyzYwfWi9nP4f_
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client eSylOPcyzYwfWi9nP4f_
+debug: set heartbeat interval for client eSylOPcyzYwfWi9nP4f_
+info: transport end (undefined)
+debug: set close timeout for client AusQNc0SNlwALJ0SP4gA
+debug: cleared close timeout for client AusQNc0SNlwALJ0SP4gA
+debug: cleared heartbeat interval for client AusQNc0SNlwALJ0SP4gA
+Peers: {"11":{"cid":4}}
+Peer: {"cid":4}
+Chat stopped, attendees: 12, 11, duration: 11s
+debug: websocket writing 5::/webrtc:{"name":"video-stopped","args":[{"from":"12"}]}
+debug: websocket writing 5::/webrtc:{"name":"chat-wait"}
+Chat ID: 100, attendee number: 1
+12 has disconnected. Online user number: 1
+debug: discarding transport
+info: transport end (undefined)
+debug: set close timeout for client eSylOPcyzYwfWi9nP4f_
+debug: cleared close timeout for client eSylOPcyzYwfWi9nP4f_
+debug: cleared heartbeat interval for client eSylOPcyzYwfWi9nP4f_
+Peers: {"12":{"cid":4}}
+Peer: {"cid":4}
+Delete chat: 100
+11 has disconnected. Online user number: 0
+debug: discarding transport
+debug: client authorized
+info: handshake authorized QGDLGwGhQVQi8wTlP4gB
+debug: setting request GET /socket.io/1/websocket/QGDLGwGhQVQi8wTlP4gB?token=11
+debug: set heartbeat interval for client QGDLGwGhQVQi8wTlP4gB
+debug: client authorized for 
+debug: websocket writing 1::
+11 authentication passed.
+debug: client authorized for /webrtc
+debug: websocket writing 1::/webrtc
+debug: websocket writing 5::/webrtc:{"name":"server-authenticated","args":[{"uid":"11"}]}
+A new client has connected. Online user number: 1
+debug: websocket writing 5::/webrtc:{"name":"chat-wait"}
+Chat ID: 100, attendee number: 1
+info: transport end (undefined)
+debug: set close timeout for client QGDLGwGhQVQi8wTlP4gB
+debug: cleared close timeout for client QGDLGwGhQVQi8wTlP4gB
+debug: cleared heartbeat interval for client QGDLGwGhQVQi8wTlP4gB
+Peers: {}
+Delete chat: 100
+11 has disconnected. Online user number: 0
+debug: discarding transport
+debug: client authorized
+info: handshake authorized jlKMSG3o_ttRbd1wP4gC
+debug: setting request GET /socket.io/1/websocket/jlKMSG3o_ttRbd1wP4gC?token=11
+debug: set heartbeat interval for client jlKMSG3o_ttRbd1wP4gC
+debug: client authorized for 
+debug: websocket writing 1::
+11 authentication passed.
+debug: client authorized for /webrtc
+debug: websocket writing 1::/webrtc
+debug: websocket writing 5::/webrtc:{"name":"server-authenticated","args":[{"uid":"11"}]}
+A new client has connected. Online user number: 1
+debug: websocket writing 5::/webrtc:{"name":"chat-wait"}
+Chat ID: 100, attendee number: 1
+debug: emitting heartbeat for client jlKMSG3o_ttRbd1wP4gC
+debug: websocket writing 2::
+debug: set heartbeat timeout for client jlKMSG3o_ttRbd1wP4gC
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client jlKMSG3o_ttRbd1wP4gC
+debug: set heartbeat interval for client jlKMSG3o_ttRbd1wP4gC
+debug: client authorized
+info: handshake authorized RzTuHRJo0qKpUZGKP4gD
+debug: setting request GET /socket.io/1/websocket/RzTuHRJo0qKpUZGKP4gD?token=12
+debug: set heartbeat interval for client RzTuHRJo0qKpUZGKP4gD
+debug: client authorized for 
+debug: websocket writing 1::
+12 authentication passed.
+debug: client authorized for /webrtc
+debug: websocket writing 1::/webrtc
+debug: websocket writing 5::/webrtc:{"name":"server-authenticated","args":[{"uid":"12"}]}
+A new client has connected. Online user number: 2
+debug: websocket writing 5::/webrtc:{"name":"chat-ready","args":[{"peerId":"12"}]}
+debug: websocket writing 5::/webrtc:{"name":"chat-ready","args":[{"peerId":"11"}]}
+debug: websocket writing 5::/webrtc:{"name":"video-invitation","args":[{"from":"11"}]}
+Chat ID: 100, attendee number: 2
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"12","data":{"sdp":"v=0\r\no=- 2694536140862490414 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE audio video\r\na=msid-semantic: WMS pvHFOplgqm1OUwcEprnVyxawrsGksI2PjzRd\r\nm=audio 1 RTP/SAVPF 111\r\nc=IN IP4 0.0.0.0\r\na=rtcp:1 IN IP4 0.0.0.0\r\na=ice-ufrag:taMibszT+/SOALXo\r\na=ice-pwd:9COw3wUkjFf8YGqD66jXpYEL\r\na=ice-options:google-ice\r\na=fingerprint:sha-256 BC:FA:75:5A:C5:6E:CE:24:3E:72:D1:72:4E:41:DB:8E:0F:7A:5C:3A:22:FA:2B:49:07:6A:8C:F1:4C:46:3F:2A\r\na=setup:actpass\r\na=mid:audio\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=sendrecv\r\na=rtcp-mux\r\na=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:4I7YbiS+JZKDyhgwtQP4MGiqGPTQ5ZfG+t/2bnX/\r\na=rtpmap:111 opus/48000/2\r\na=fmtp:111 minptime=10 stereo=1; sprop-stereo=1\r\na=maxptime:60\r\na=ssrc:3087755528 cname:2rpI2Fb0bqtwg9IC\r\na=ssrc:3087755528 msid:pvHFOplgqm1OUwcEprnVyxawrsGksI2PjzRd 398b0123-f1f6-4098-ade9-9478ac66d07a\r\na=ssrc:3087755528 mslabel:pvHFOplgqm1OUwcEprnVyxawrsGksI2PjzRd\r\na=ssrc:3087755528 label:398b0123-f1f6-4098-ade9-9478ac66d07a\r\nm=video 1 RTP/SAVPF 100 116 117\r\nc=IN IP4 0.0.0.0\r\na=rtcp:1 IN IP4 0.0.0.0\r\na=ice-ufrag:taMibszT+/SOALXo\r\na=ice-pwd:9COw3wUkjFf8YGqD66jXpYEL\r\na=ice-options:google-ice\r\na=fingerprint:sha-256 BC:FA:75:5A:C5:6E:CE:24:3E:72:D1:72:4E:41:DB:8E:0F:7A:5C:3A:22:FA:2B:49:07:6A:8C:F1:4C:46:3F:2A\r\na=setup:actpass\r\na=mid:video\r\na=extmap:2 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:3 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=sendrecv\r\na=rtcp-mux\r\na=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:4I7YbiS+JZKDyhgwtQP4MGiqGPTQ5ZfG+t/2bnX/\r\na=rtpmap:100 VP8/90000\r\na=rtcp-fb:100 ccm fir\r\na=rtcp-fb:100 nack\r\na=rtcp-fb:100 goog-remb\r\na=rtpmap:116 red/90000\r\na=rtpmap:117 ulpfec/90000\r\na=ssrc:322907328 cname:2rpI2Fb0bqtwg9IC\r\na=ssrc:322907328 msid:pvHFOplgqm1OUwcEprnVyxawrsGksI2PjzRd 764e295a-1e1e-48ce-b6fa-defd01f7e9d1\r\na=ssrc:322907328 mslabel:pvHFOplgqm1OUwcEprnVyxawrsGksI2PjzRd\r\na=ssrc:322907328 label:764e295a-1e1e-48ce-b6fa-defd01f7e9d1\r\n","type":"offer"}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"12","data":{"type":"candidate","candidate":"a=candidate:430735571 1 udp 2113937151 192.168.1.102 52181 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"12","data":{"type":"candidate","candidate":"a=candidate:430735571 2 udp 2113937151 192.168.1.102 52181 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"12","data":{"type":"candidate","candidate":"a=candidate:430735571 1 udp 2113937151 192.168.1.102 52181 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"12","data":{"type":"candidate","candidate":"a=candidate:430735571 2 udp 2113937151 192.168.1.102 52181 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"12","data":{"type":"candidate","candidate":"a=candidate:1462729763 1 tcp 1509957375 192.168.1.102 0 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"12","data":{"type":"candidate","candidate":"a=candidate:1462729763 2 tcp 1509957375 192.168.1.102 0 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"12","data":{"type":"candidate","candidate":"a=candidate:1462729763 1 tcp 1509957375 192.168.1.102 0 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"12","data":{"type":"candidate","candidate":"a=candidate:1462729763 2 tcp 1509957375 192.168.1.102 0 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+Chat started, attendees: 11, 12
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"sdp":"v=0\r\no=- 5577970890175120154 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE audio video\r\na=msid-semantic: WMS 31IixJj9FWbihI6wh2XRZcIpTV3NXGOdLyGD\r\nm=audio 1 RTP/SAVPF 111\r\nc=IN IP4 0.0.0.0\r\na=rtcp:1 IN IP4 0.0.0.0\r\na=ice-ufrag:9nPGz5ANBo5kPUgJ\r\na=ice-pwd:DJGQJ/ObHF/EKiWzQFaz2BJv\r\na=fingerprint:sha-256 BC:FA:75:5A:C5:6E:CE:24:3E:72:D1:72:4E:41:DB:8E:0F:7A:5C:3A:22:FA:2B:49:07:6A:8C:F1:4C:46:3F:2A\r\na=setup:active\r\na=mid:audio\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=sendrecv\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=fmtp:111 minptime=10 stereo=1; sprop-stereo=1\r\na=maxptime:60\r\na=ssrc:3840107708 cname:OlRancjxBrrTYjHK\r\na=ssrc:3840107708 msid:31IixJj9FWbihI6wh2XRZcIpTV3NXGOdLyGD 0142f260-2a0e-46ae-befb-40c500db96c0\r\na=ssrc:3840107708 mslabel:31IixJj9FWbihI6wh2XRZcIpTV3NXGOdLyGD\r\na=ssrc:3840107708 label:0142f260-2a0e-46ae-befb-40c500db96c0\r\nm=video 1 RTP/SAVPF 100 116 117\r\nc=IN IP4 0.0.0.0\r\na=rtcp:1 IN IP4 0.0.0.0\r\na=ice-ufrag:9nPGz5ANBo5kPUgJ\r\na=ice-pwd:DJGQJ/ObHF/EKiWzQFaz2BJv\r\na=fingerprint:sha-256 BC:FA:75:5A:C5:6E:CE:24:3E:72:D1:72:4E:41:DB:8E:0F:7A:5C:3A:22:FA:2B:49:07:6A:8C:F1:4C:46:3F:2A\r\na=setup:active\r\na=mid:video\r\na=extmap:2 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:3 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=sendrecv\r\na=rtcp-mux\r\na=rtpmap:100 VP8/90000\r\na=rtcp-fb:100 ccm fir\r\na=rtcp-fb:100 nack\r\na=rtcp-fb:100 goog-remb\r\na=rtpmap:116 red/90000\r\na=rtpmap:117 ulpfec/90000\r\na=ssrc:3398245067 cname:OlRancjxBrrTYjHK\r\na=ssrc:3398245067 msid:31IixJj9FWbihI6wh2XRZcIpTV3NXGOdLyGD b404e306-c315-41b4-94be-a480119be7b1\r\na=ssrc:3398245067 mslabel:31IixJj9FWbihI6wh2XRZcIpTV3NXGOdLyGD\r\na=ssrc:3398245067 label:b404e306-c315-41b4-94be-a480119be7b1\r\n","type":"answer"}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:430735571 1 udp 2113937151 192.168.1.102 42985 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:430735571 1 udp 2113937151 192.168.1.102 42985 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:1462729763 1 tcp 1509957375 192.168.1.102 0 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:1462729763 1 tcp 1509957375 192.168.1.102 0 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: emitting heartbeat for client jlKMSG3o_ttRbd1wP4gC
+debug: websocket writing 2::
+debug: set heartbeat timeout for client jlKMSG3o_ttRbd1wP4gC
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client jlKMSG3o_ttRbd1wP4gC
+debug: set heartbeat interval for client jlKMSG3o_ttRbd1wP4gC
+debug: emitting heartbeat for client RzTuHRJo0qKpUZGKP4gD
+debug: websocket writing 2::
+debug: set heartbeat timeout for client RzTuHRJo0qKpUZGKP4gD
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client RzTuHRJo0qKpUZGKP4gD
+debug: set heartbeat interval for client RzTuHRJo0qKpUZGKP4gD
+Received video-stopped
+Chat stopped, attendees: 11, 12, duration: 27s
+debug: websocket writing 5::/webrtc:{"name":"video-stopped","args":[{"from":"12"}]}
+Leaving chat: 100
+debug: websocket writing 5::/webrtc:{"name":"chat-wait"}
+Chat ID: 100, attendee number: 1
+debug: emitting heartbeat for client jlKMSG3o_ttRbd1wP4gC
+debug: websocket writing 2::
+debug: set heartbeat timeout for client jlKMSG3o_ttRbd1wP4gC
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client jlKMSG3o_ttRbd1wP4gC
+debug: set heartbeat interval for client jlKMSG3o_ttRbd1wP4gC
+debug: client authorized
+info: handshake authorized 5T2OGoHz4qqiBT6ZP4gE
+debug: setting request GET /socket.io/1/websocket/5T2OGoHz4qqiBT6ZP4gE?token=13
+debug: set heartbeat interval for client 5T2OGoHz4qqiBT6ZP4gE
+debug: client authorized for 
+debug: websocket writing 1::
+13 authentication passed.
+debug: client authorized for /webrtc
+debug: websocket writing 1::/webrtc
+debug: websocket writing 5::/webrtc:{"name":"server-authenticated","args":[{"uid":"13"}]}
+A new client has connected. Online user number: 3
+debug: websocket writing 5::/webrtc:{"name":"chat-ready","args":[{"peerId":"13"}]}
+debug: websocket writing 5::/webrtc:{"name":"chat-ready","args":[{"peerId":"11"}]}
+debug: websocket writing 5::/webrtc:{"name":"video-invitation","args":[{"from":"11"}]}
+Chat ID: 100, attendee number: 2
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"13","data":{"sdp":"v=0\r\no=- 5050969666018308031 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE audio video\r\na=msid-semantic: WMS Uc0qJyHnG2TVTt4wPz5FfwHOn4ZTqh6OySLp\r\nm=audio 1 RTP/SAVPF 111\r\nc=IN IP4 0.0.0.0\r\na=rtcp:1 IN IP4 0.0.0.0\r\na=ice-ufrag:9lQkXnQ0SaUghaSp\r\na=ice-pwd:FB2IvlABApck9aBDiYplwANI\r\na=ice-options:google-ice\r\na=fingerprint:sha-256 BC:FA:75:5A:C5:6E:CE:24:3E:72:D1:72:4E:41:DB:8E:0F:7A:5C:3A:22:FA:2B:49:07:6A:8C:F1:4C:46:3F:2A\r\na=setup:actpass\r\na=mid:audio\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=sendrecv\r\na=rtcp-mux\r\na=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:Z/7Fz4NgRiYsP+N1Dzg8lvZZktI6/GawTWoaVq89\r\na=rtpmap:111 opus/48000/2\r\na=fmtp:111 minptime=10 stereo=1; sprop-stereo=1\r\na=maxptime:60\r\na=ssrc:1693737589 cname:Ax29cCZhW7rNBdA6\r\na=ssrc:1693737589 msid:Uc0qJyHnG2TVTt4wPz5FfwHOn4ZTqh6OySLp 11a19148-2a01-4cd5-a66e-ad1393d40706\r\na=ssrc:1693737589 mslabel:Uc0qJyHnG2TVTt4wPz5FfwHOn4ZTqh6OySLp\r\na=ssrc:1693737589 label:11a19148-2a01-4cd5-a66e-ad1393d40706\r\nm=video 1 RTP/SAVPF 100 116 117\r\nc=IN IP4 0.0.0.0\r\na=rtcp:1 IN IP4 0.0.0.0\r\na=ice-ufrag:9lQkXnQ0SaUghaSp\r\na=ice-pwd:FB2IvlABApck9aBDiYplwANI\r\na=ice-options:google-ice\r\na=fingerprint:sha-256 BC:FA:75:5A:C5:6E:CE:24:3E:72:D1:72:4E:41:DB:8E:0F:7A:5C:3A:22:FA:2B:49:07:6A:8C:F1:4C:46:3F:2A\r\na=setup:actpass\r\na=mid:video\r\na=extmap:2 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:3 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=sendrecv\r\na=rtcp-mux\r\na=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:Z/7Fz4NgRiYsP+N1Dzg8lvZZktI6/GawTWoaVq89\r\na=rtpmap:100 VP8/90000\r\na=rtcp-fb:100 ccm fir\r\na=rtcp-fb:100 nack\r\na=rtcp-fb:100 goog-remb\r\na=rtpmap:116 red/90000\r\na=rtpmap:117 ulpfec/90000\r\na=ssrc:2221220332 cname:Ax29cCZhW7rNBdA6\r\na=ssrc:2221220332 msid:Uc0qJyHnG2TVTt4wPz5FfwHOn4ZTqh6OySLp 5cce811a-9a9e-4f86-8120-2b848477dad7\r\na=ssrc:2221220332 mslabel:Uc0qJyHnG2TVTt4wPz5FfwHOn4ZTqh6OySLp\r\na=ssrc:2221220332 label:5cce811a-9a9e-4f86-8120-2b848477dad7\r\n","type":"offer"}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"13","data":{"type":"candidate","candidate":"a=candidate:430735571 1 udp 2113937151 192.168.1.102 49826 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"13","data":{"type":"candidate","candidate":"a=candidate:430735571 2 udp 2113937151 192.168.1.102 49826 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"13","data":{"type":"candidate","candidate":"a=candidate:430735571 1 udp 2113937151 192.168.1.102 49826 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"13","data":{"type":"candidate","candidate":"a=candidate:430735571 2 udp 2113937151 192.168.1.102 49826 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"13","data":{"type":"candidate","candidate":"a=candidate:1462729763 1 tcp 1509957375 192.168.1.102 0 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"13","data":{"type":"candidate","candidate":"a=candidate:1462729763 2 tcp 1509957375 192.168.1.102 0 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"13","data":{"type":"candidate","candidate":"a=candidate:1462729763 1 tcp 1509957375 192.168.1.102 0 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"13","data":{"type":"candidate","candidate":"a=candidate:1462729763 2 tcp 1509957375 192.168.1.102 0 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+Chat started, attendees: 11, 13
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"sdp":"v=0\r\no=- 3816779089254619524 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE audio video\r\na=msid-semantic: WMS 31IixJj9FWbihI6wh2XRZcIpTV3NXGOdLyGD\r\nm=audio 1 RTP/SAVPF 111\r\nc=IN IP4 0.0.0.0\r\na=rtcp:1 IN IP4 0.0.0.0\r\na=ice-ufrag:k/Lid0WjP3EgXGgV\r\na=ice-pwd:xh/6xVWnz0EnwV4XlU31P4CS\r\na=fingerprint:sha-256 BC:FA:75:5A:C5:6E:CE:24:3E:72:D1:72:4E:41:DB:8E:0F:7A:5C:3A:22:FA:2B:49:07:6A:8C:F1:4C:46:3F:2A\r\na=setup:active\r\na=mid:audio\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=sendrecv\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=fmtp:111 minptime=10 stereo=1; sprop-stereo=1\r\na=maxptime:60\r\na=ssrc:2659501739 cname:HNswy7i2b5vzhNP4\r\na=ssrc:2659501739 msid:31IixJj9FWbihI6wh2XRZcIpTV3NXGOdLyGD 0142f260-2a0e-46ae-befb-40c500db96c0\r\na=ssrc:2659501739 mslabel:31IixJj9FWbihI6wh2XRZcIpTV3NXGOdLyGD\r\na=ssrc:2659501739 label:0142f260-2a0e-46ae-befb-40c500db96c0\r\nm=video 1 RTP/SAVPF 100 116 117\r\nc=IN IP4 0.0.0.0\r\na=rtcp:1 IN IP4 0.0.0.0\r\na=ice-ufrag:k/Lid0WjP3EgXGgV\r\na=ice-pwd:xh/6xVWnz0EnwV4XlU31P4CS\r\na=fingerprint:sha-256 BC:FA:75:5A:C5:6E:CE:24:3E:72:D1:72:4E:41:DB:8E:0F:7A:5C:3A:22:FA:2B:49:07:6A:8C:F1:4C:46:3F:2A\r\na=setup:active\r\na=mid:video\r\na=extmap:2 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:3 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=sendrecv\r\na=rtcp-mux\r\na=rtpmap:100 VP8/90000\r\na=rtcp-fb:100 ccm fir\r\na=rtcp-fb:100 nack\r\na=rtcp-fb:100 goog-remb\r\na=rtpmap:116 red/90000\r\na=rtpmap:117 ulpfec/90000\r\na=ssrc:794956344 cname:HNswy7i2b5vzhNP4\r\na=ssrc:794956344 msid:31IixJj9FWbihI6wh2XRZcIpTV3NXGOdLyGD b404e306-c315-41b4-94be-a480119be7b1\r\na=ssrc:794956344 mslabel:31IixJj9FWbihI6wh2XRZcIpTV3NXGOdLyGD\r\na=ssrc:794956344 label:b404e306-c315-41b4-94be-a480119be7b1\r\n","type":"answer"}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:430735571 1 udp 2113937151 192.168.1.102 36859 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:430735571 1 udp 2113937151 192.168.1.102 36859 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:1462729763 1 tcp 1509957375 192.168.1.102 0 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"11","data":{"type":"candidate","candidate":"a=candidate:1462729763 1 tcp 1509957375 192.168.1.102 0 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+info: transport end (undefined)
+debug: set close timeout for client RzTuHRJo0qKpUZGKP4gD
+debug: cleared close timeout for client RzTuHRJo0qKpUZGKP4gD
+debug: cleared heartbeat interval for client RzTuHRJo0qKpUZGKP4gD
+Peers: {}
+debug: websocket writing 5::/webrtc:{"name":"chat-wait"}
+debug: websocket writing 5::/webrtc:{"name":"chat-wait"}
+Chat ID: 100, attendee number: 2
+12 has disconnected. Online user number: 2
+debug: discarding transport
+info: transport end (undefined)
+debug: set close timeout for client 5T2OGoHz4qqiBT6ZP4gE
+debug: cleared close timeout for client 5T2OGoHz4qqiBT6ZP4gE
+debug: cleared heartbeat interval for client 5T2OGoHz4qqiBT6ZP4gE
+Peers: {"11":{"cid":6}}
+Peer: {"cid":6}
+Chat stopped, attendees: 11, 13, duration: 4s
+debug: websocket writing 5::/webrtc:{"name":"video-stopped","args":[{"from":"13"}]}
+debug: websocket writing 5::/webrtc:{"name":"chat-wait"}
+Chat ID: 100, attendee number: 1
+13 has disconnected. Online user number: 1
+debug: discarding transport
+info: transport end (undefined)
+debug: set close timeout for client jlKMSG3o_ttRbd1wP4gC
+debug: cleared close timeout for client jlKMSG3o_ttRbd1wP4gC
+debug: cleared heartbeat interval for client jlKMSG3o_ttRbd1wP4gC
+Peers: {"13":{"cid":6}}
+Peer: {"cid":6}
+Delete chat: 100
+11 has disconnected. Online user number: 0
+debug: discarding transport
+debug: client authorized
+info: handshake authorized MHZjlhugOSjd5Y0VP4gF
+debug: setting request GET /socket.io/1/websocket/MHZjlhugOSjd5Y0VP4gF?token=1
+debug: set heartbeat interval for client MHZjlhugOSjd5Y0VP4gF
+debug: client authorized for 
+debug: websocket writing 1::
+1 authentication passed.
+debug: client authorized for /webrtc
+debug: websocket writing 1::/webrtc
+debug: websocket writing 5::/webrtc:{"name":"server-authenticated","args":[{"uid":"1"}]}
+A new client has connected. Online user number: 1
+debug: websocket writing 5::/webrtc:{"name":"chat-wait"}
+Chat ID: 100, attendee number: 1
+debug: client authorized
+info: handshake authorized sdA0PcY7x19jnTKFP4gG
+debug: setting request GET /socket.io/1/websocket/sdA0PcY7x19jnTKFP4gG?token=2
+debug: set heartbeat interval for client sdA0PcY7x19jnTKFP4gG
+debug: client authorized for 
+debug: websocket writing 1::
+2 authentication passed.
+debug: client authorized for /webrtc
+debug: websocket writing 1::/webrtc
+debug: websocket writing 5::/webrtc:{"name":"server-authenticated","args":[{"uid":"2"}]}
+A new client has connected. Online user number: 2
+debug: websocket writing 5::/webrtc:{"name":"chat-ready","args":[{"peerId":"2"}]}
+debug: websocket writing 5::/webrtc:{"name":"chat-ready","args":[{"peerId":"1"}]}
+debug: websocket writing 5::/webrtc:{"name":"video-invitation","args":[{"from":"1"}]}
+Chat ID: 100, attendee number: 2
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"2","data":{"sdp":"v=0\r\no=- 1751741145499070830 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE audio video\r\na=msid-semantic: WMS YhvvFuwQ7Zp5GFpCyUfxWlT1RfMYGBhMtlzB\r\nm=audio 1 RTP/SAVPF 111\r\nc=IN IP4 0.0.0.0\r\na=rtcp:1 IN IP4 0.0.0.0\r\na=ice-ufrag:NabL8H3ijhvNsGfb\r\na=ice-pwd:xeL4viWjCzdk+mLzx984Lk+w\r\na=ice-options:google-ice\r\na=fingerprint:sha-256 BC:FA:75:5A:C5:6E:CE:24:3E:72:D1:72:4E:41:DB:8E:0F:7A:5C:3A:22:FA:2B:49:07:6A:8C:F1:4C:46:3F:2A\r\na=setup:actpass\r\na=mid:audio\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=sendrecv\r\na=rtcp-mux\r\na=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:2hIY+R8x7M3DXL4xYOMcdytBJitQricOkfkdJSmH\r\na=rtpmap:111 opus/48000/2\r\na=fmtp:111 minptime=10 stereo=1; sprop-stereo=1\r\na=maxptime:60\r\na=ssrc:453151809 cname:fyo7Ge2YafgL+Rjw\r\na=ssrc:453151809 msid:YhvvFuwQ7Zp5GFpCyUfxWlT1RfMYGBhMtlzB a3efc146-2580-4ed0-aaa6-6d646f7f97c9\r\na=ssrc:453151809 mslabel:YhvvFuwQ7Zp5GFpCyUfxWlT1RfMYGBhMtlzB\r\na=ssrc:453151809 label:a3efc146-2580-4ed0-aaa6-6d646f7f97c9\r\nm=video 1 RTP/SAVPF 100 116 117\r\nc=IN IP4 0.0.0.0\r\na=rtcp:1 IN IP4 0.0.0.0\r\na=ice-ufrag:NabL8H3ijhvNsGfb\r\na=ice-pwd:xeL4viWjCzdk+mLzx984Lk+w\r\na=ice-options:google-ice\r\na=fingerprint:sha-256 BC:FA:75:5A:C5:6E:CE:24:3E:72:D1:72:4E:41:DB:8E:0F:7A:5C:3A:22:FA:2B:49:07:6A:8C:F1:4C:46:3F:2A\r\na=setup:actpass\r\na=mid:video\r\na=extmap:2 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:3 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=sendrecv\r\na=rtcp-mux\r\na=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:2hIY+R8x7M3DXL4xYOMcdytBJitQricOkfkdJSmH\r\na=rtpmap:100 VP8/90000\r\na=rtcp-fb:100 ccm fir\r\na=rtcp-fb:100 nack\r\na=rtcp-fb:100 goog-remb\r\na=rtpmap:116 red/90000\r\na=rtpmap:117 ulpfec/90000\r\na=ssrc:1600023751 cname:fyo7Ge2YafgL+Rjw\r\na=ssrc:1600023751 msid:YhvvFuwQ7Zp5GFpCyUfxWlT1RfMYGBhMtlzB 807584c5-2951-4a64-8635-5d653ebefb91\r\na=ssrc:1600023751 mslabel:YhvvFuwQ7Zp5GFpCyUfxWlT1RfMYGBhMtlzB\r\na=ssrc:1600023751 label:807584c5-2951-4a64-8635-5d653ebefb91\r\n","type":"offer"}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"2","data":{"type":"candidate","candidate":"a=candidate:430735571 1 udp 2113937151 192.168.1.102 43936 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"2","data":{"type":"candidate","candidate":"a=candidate:430735571 2 udp 2113937151 192.168.1.102 43936 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"2","data":{"type":"candidate","candidate":"a=candidate:430735571 1 udp 2113937151 192.168.1.102 43936 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"2","data":{"type":"candidate","candidate":"a=candidate:430735571 2 udp 2113937151 192.168.1.102 43936 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"2","data":{"type":"candidate","candidate":"a=candidate:1462729763 1 tcp 1509957375 192.168.1.102 0 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"2","data":{"type":"candidate","candidate":"a=candidate:1462729763 2 tcp 1509957375 192.168.1.102 0 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"2","data":{"type":"candidate","candidate":"a=candidate:1462729763 1 tcp 1509957375 192.168.1.102 0 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"2","data":{"type":"candidate","candidate":"a=candidate:1462729763 2 tcp 1509957375 192.168.1.102 0 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+Chat started, attendees: 1, 2
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1","data":{"sdp":"v=0\r\no=- 3354518307703549983 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE audio video\r\na=msid-semantic: WMS RGa8lmJNjYiJsUch0ExdOQ239GE0e4R63WTN\r\nm=audio 1 RTP/SAVPF 111\r\nc=IN IP4 0.0.0.0\r\na=rtcp:1 IN IP4 0.0.0.0\r\na=ice-ufrag:FmdLdiZQ4Os7YJXt\r\na=ice-pwd:MVe4vYNoBV0l8EUwqCFKRhfO\r\na=fingerprint:sha-256 BC:FA:75:5A:C5:6E:CE:24:3E:72:D1:72:4E:41:DB:8E:0F:7A:5C:3A:22:FA:2B:49:07:6A:8C:F1:4C:46:3F:2A\r\na=setup:active\r\na=mid:audio\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=sendrecv\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=fmtp:111 minptime=10 stereo=1; sprop-stereo=1\r\na=maxptime:60\r\na=ssrc:1534329941 cname:Bv0uITavWUCb2yAG\r\na=ssrc:1534329941 msid:RGa8lmJNjYiJsUch0ExdOQ239GE0e4R63WTN 39a0a687-ceda-4687-9074-2c6629f2ceb1\r\na=ssrc:1534329941 mslabel:RGa8lmJNjYiJsUch0ExdOQ239GE0e4R63WTN\r\na=ssrc:1534329941 label:39a0a687-ceda-4687-9074-2c6629f2ceb1\r\nm=video 1 RTP/SAVPF 100 116 117\r\nc=IN IP4 0.0.0.0\r\na=rtcp:1 IN IP4 0.0.0.0\r\na=ice-ufrag:FmdLdiZQ4Os7YJXt\r\na=ice-pwd:MVe4vYNoBV0l8EUwqCFKRhfO\r\na=fingerprint:sha-256 BC:FA:75:5A:C5:6E:CE:24:3E:72:D1:72:4E:41:DB:8E:0F:7A:5C:3A:22:FA:2B:49:07:6A:8C:F1:4C:46:3F:2A\r\na=setup:active\r\na=mid:video\r\na=extmap:2 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:3 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=sendrecv\r\na=rtcp-mux\r\na=rtpmap:100 VP8/90000\r\na=rtcp-fb:100 ccm fir\r\na=rtcp-fb:100 nack\r\na=rtcp-fb:100 goog-remb\r\na=rtpmap:116 red/90000\r\na=rtpmap:117 ulpfec/90000\r\na=ssrc:114432081 cname:Bv0uITavWUCb2yAG\r\na=ssrc:114432081 msid:RGa8lmJNjYiJsUch0ExdOQ239GE0e4R63WTN 3c28eaa2-528d-4061-b48b-904e2bfee120\r\na=ssrc:114432081 mslabel:RGa8lmJNjYiJsUch0ExdOQ239GE0e4R63WTN\r\na=ssrc:114432081 label:3c28eaa2-528d-4061-b48b-904e2bfee120\r\n","type":"answer"}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1","data":{"type":"candidate","candidate":"a=candidate:430735571 1 udp 2113937151 192.168.1.102 40225 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1","data":{"type":"candidate","candidate":"a=candidate:430735571 1 udp 2113937151 192.168.1.102 40225 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1","data":{"type":"candidate","candidate":"a=candidate:1462729763 1 tcp 1509957375 192.168.1.102 0 typ host generation 0\r\n","sdpMid":"audio","sdpMLineIndex":0}}]}
+debug: websocket writing 5::/webrtc:{"name":"video-signal","args":[{"from":"1","data":{"type":"candidate","candidate":"a=candidate:1462729763 1 tcp 1509957375 192.168.1.102 0 typ host generation 0\r\n","sdpMid":"video","sdpMLineIndex":1}}]}
+debug: client authorized
+info: handshake authorized a1N64E5TJ3R58td6P4gH
+debug: setting request GET /socket.io/1/websocket/a1N64E5TJ3R58td6P4gH?token=3
+debug: set heartbeat interval for client a1N64E5TJ3R58td6P4gH
+debug: client authorized for 
+debug: websocket writing 1::
+3 authentication passed.
+debug: client authorized for /webrtc
+debug: websocket writing 1::/webrtc
+debug: websocket writing 5::/webrtc:{"name":"server-authenticated","args":[{"uid":"3"}]}
+A new client has connected. Online user number: 3
+debug: websocket writing 5::/webrtc:{"name":"video-error","args":[{"code":2131}]}
+debug: emitting heartbeat for client MHZjlhugOSjd5Y0VP4gF
+debug: websocket writing 2::
+debug: set heartbeat timeout for client MHZjlhugOSjd5Y0VP4gF
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client MHZjlhugOSjd5Y0VP4gF
+debug: set heartbeat interval for client MHZjlhugOSjd5Y0VP4gF
+debug: emitting heartbeat for client sdA0PcY7x19jnTKFP4gG
+debug: websocket writing 2::
+debug: set heartbeat timeout for client sdA0PcY7x19jnTKFP4gG
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client sdA0PcY7x19jnTKFP4gG
+debug: set heartbeat interval for client sdA0PcY7x19jnTKFP4gG
+debug: emitting heartbeat for client a1N64E5TJ3R58td6P4gH
+debug: websocket writing 2::
+debug: set heartbeat timeout for client a1N64E5TJ3R58td6P4gH
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client a1N64E5TJ3R58td6P4gH
+debug: set heartbeat interval for client a1N64E5TJ3R58td6P4gH
+debug: client authorized
+info: handshake authorized fWqxqMnBom9ADXiPP4gI
+debug: setting request GET /socket.io/1/websocket/fWqxqMnBom9ADXiPP4gI?token=3
+debug: set heartbeat interval for client fWqxqMnBom9ADXiPP4gI
+debug: client authorized for 
+debug: websocket writing 1::
+3 authentication passed.
+debug: client authorized for /webrtc
+debug: websocket writing 1::/webrtc
+info: booting client
+debug: websocket writing 0::/webrtc
+Peers: {}
+3 has disconnected. Online user number: 2
+Force disconnected 3
+debug: websocket writing 5::/webrtc:{"name":"server-authenticated","args":[{"uid":"3"}]}
+A new client has connected. Online user number: 3
+debug: websocket writing 5::/webrtc:{"name":"video-error","args":[{"code":2131}]}
+debug: emitting heartbeat for client MHZjlhugOSjd5Y0VP4gF
+debug: websocket writing 2::
+debug: set heartbeat timeout for client MHZjlhugOSjd5Y0VP4gF
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client MHZjlhugOSjd5Y0VP4gF
+debug: set heartbeat interval for client MHZjlhugOSjd5Y0VP4gF
+debug: client authorized
+info: handshake authorized n4xgo4SoxlSOU3zyP4gJ
+debug: setting request GET /socket.io/1/websocket/n4xgo4SoxlSOU3zyP4gJ?token=4
+debug: set heartbeat interval for client n4xgo4SoxlSOU3zyP4gJ
+debug: client authorized for 
+debug: websocket writing 1::
+4 authentication passed.
+debug: client authorized for /webrtc
+debug: websocket writing 1::/webrtc
+debug: websocket writing 5::/webrtc:{"name":"server-authenticated","args":[{"uid":"4"}]}
+A new client has connected. Online user number: 4
+debug: emitting heartbeat for client sdA0PcY7x19jnTKFP4gG
+debug: websocket writing 2::
+debug: set heartbeat timeout for client sdA0PcY7x19jnTKFP4gG
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client sdA0PcY7x19jnTKFP4gG
+debug: set heartbeat interval for client sdA0PcY7x19jnTKFP4gG
+debug: websocket writing 5::/webrtc:{"name":"video-error","args":[{"code":2131}]}
+debug: emitting heartbeat for client a1N64E5TJ3R58td6P4gH
+debug: websocket writing 2::
+debug: set heartbeat timeout for client a1N64E5TJ3R58td6P4gH
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client a1N64E5TJ3R58td6P4gH
+debug: set heartbeat interval for client a1N64E5TJ3R58td6P4gH
+info: transport end (undefined)
+debug: set close timeout for client fWqxqMnBom9ADXiPP4gI
+debug: cleared close timeout for client fWqxqMnBom9ADXiPP4gI
+debug: cleared heartbeat interval for client fWqxqMnBom9ADXiPP4gI
+Peers: {}
+3 has disconnected. Online user number: 3
+debug: discarding transport
+info: transport end (undefined)
+debug: set close timeout for client n4xgo4SoxlSOU3zyP4gJ
+debug: cleared close timeout for client n4xgo4SoxlSOU3zyP4gJ
+debug: cleared heartbeat interval for client n4xgo4SoxlSOU3zyP4gJ
+Peers: {}
+4 has disconnected. Online user number: 2
+debug: discarding transport
+debug: emitting heartbeat for client MHZjlhugOSjd5Y0VP4gF
+debug: websocket writing 2::
+debug: set heartbeat timeout for client MHZjlhugOSjd5Y0VP4gF
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client MHZjlhugOSjd5Y0VP4gF
+debug: set heartbeat interval for client MHZjlhugOSjd5Y0VP4gF
+debug: emitting heartbeat for client sdA0PcY7x19jnTKFP4gG
+debug: websocket writing 2::
+debug: set heartbeat timeout for client sdA0PcY7x19jnTKFP4gG
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client sdA0PcY7x19jnTKFP4gG
+debug: set heartbeat interval for client sdA0PcY7x19jnTKFP4gG
+debug: emitting heartbeat for client a1N64E5TJ3R58td6P4gH
+debug: websocket writing 2::
+debug: set heartbeat timeout for client a1N64E5TJ3R58td6P4gH
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client a1N64E5TJ3R58td6P4gH
+debug: set heartbeat interval for client a1N64E5TJ3R58td6P4gH
+debug: emitting heartbeat for client MHZjlhugOSjd5Y0VP4gF
+debug: websocket writing 2::
+debug: set heartbeat timeout for client MHZjlhugOSjd5Y0VP4gF
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client MHZjlhugOSjd5Y0VP4gF
+debug: set heartbeat interval for client MHZjlhugOSjd5Y0VP4gF
+debug: emitting heartbeat for client sdA0PcY7x19jnTKFP4gG
+debug: websocket writing 2::
+debug: set heartbeat timeout for client sdA0PcY7x19jnTKFP4gG
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client sdA0PcY7x19jnTKFP4gG
+debug: set heartbeat interval for client sdA0PcY7x19jnTKFP4gG
+debug: emitting heartbeat for client a1N64E5TJ3R58td6P4gH
+debug: websocket writing 2::
+debug: set heartbeat timeout for client a1N64E5TJ3R58td6P4gH
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client a1N64E5TJ3R58td6P4gH
+debug: set heartbeat interval for client a1N64E5TJ3R58td6P4gH
+debug: emitting heartbeat for client MHZjlhugOSjd5Y0VP4gF
+debug: websocket writing 2::
+debug: set heartbeat timeout for client MHZjlhugOSjd5Y0VP4gF
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client MHZjlhugOSjd5Y0VP4gF
+debug: set heartbeat interval for client MHZjlhugOSjd5Y0VP4gF
+debug: emitting heartbeat for client sdA0PcY7x19jnTKFP4gG
+debug: websocket writing 2::
+debug: set heartbeat timeout for client sdA0PcY7x19jnTKFP4gG
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client sdA0PcY7x19jnTKFP4gG
+debug: set heartbeat interval for client sdA0PcY7x19jnTKFP4gG
+debug: emitting heartbeat for client a1N64E5TJ3R58td6P4gH
+debug: websocket writing 2::
+debug: set heartbeat timeout for client a1N64E5TJ3R58td6P4gH
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client a1N64E5TJ3R58td6P4gH
+debug: set heartbeat interval for client a1N64E5TJ3R58td6P4gH
+debug: emitting heartbeat for client MHZjlhugOSjd5Y0VP4gF
+debug: websocket writing 2::
+debug: set heartbeat timeout for client MHZjlhugOSjd5Y0VP4gF
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client MHZjlhugOSjd5Y0VP4gF
+debug: set heartbeat interval for client MHZjlhugOSjd5Y0VP4gF
+debug: emitting heartbeat for client sdA0PcY7x19jnTKFP4gG
+debug: websocket writing 2::
+debug: set heartbeat timeout for client sdA0PcY7x19jnTKFP4gG
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client sdA0PcY7x19jnTKFP4gG
+debug: set heartbeat interval for client sdA0PcY7x19jnTKFP4gG
+debug: emitting heartbeat for client a1N64E5TJ3R58td6P4gH
+debug: websocket writing 2::
+debug: set heartbeat timeout for client a1N64E5TJ3R58td6P4gH
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client a1N64E5TJ3R58td6P4gH
+debug: set heartbeat interval for client a1N64E5TJ3R58td6P4gH
+debug: emitting heartbeat for client MHZjlhugOSjd5Y0VP4gF
+debug: websocket writing 2::
+debug: set heartbeat timeout for client MHZjlhugOSjd5Y0VP4gF
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client MHZjlhugOSjd5Y0VP4gF
+debug: set heartbeat interval for client MHZjlhugOSjd5Y0VP4gF
+debug: emitting heartbeat for client sdA0PcY7x19jnTKFP4gG
+debug: websocket writing 2::
+debug: set heartbeat timeout for client sdA0PcY7x19jnTKFP4gG
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client sdA0PcY7x19jnTKFP4gG
+debug: set heartbeat interval for client sdA0PcY7x19jnTKFP4gG
+debug: emitting heartbeat for client a1N64E5TJ3R58td6P4gH
+debug: websocket writing 2::
+debug: set heartbeat timeout for client a1N64E5TJ3R58td6P4gH
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client a1N64E5TJ3R58td6P4gH
+debug: set heartbeat interval for client a1N64E5TJ3R58td6P4gH
+info: transport end (undefined)
+debug: set close timeout for client a1N64E5TJ3R58td6P4gH
+debug: cleared close timeout for client a1N64E5TJ3R58td6P4gH
+debug: cleared heartbeat interval for client a1N64E5TJ3R58td6P4gH
+debug: discarding transport
+Received video-stopped
+Chat stopped, attendees: 1, 2, duration: 7s
+debug: websocket writing 5::/webrtc:{"name":"video-stopped","args":[{"from":"2"}]}
+Leaving chat: 100
+debug: websocket writing 5::/webrtc:{"name":"chat-wait"}
+Chat ID: 100, attendee number: 1
+Leaving chat: 100
+Delete chat: 100
+debug: client authorized
+info: handshake authorized KIXBNmCmOoGgkh0_P4gK
+debug: setting request GET /socket.io/1/websocket/KIXBNmCmOoGgkh0_P4gK?token=1
+debug: set heartbeat interval for client KIXBNmCmOoGgkh0_P4gK
+debug: client authorized for 
+debug: websocket writing 1::
+1 authentication passed.
+debug: client authorized for /webrtc
+debug: websocket writing 1::/webrtc
+info: booting client
+debug: websocket writing 0::/webrtc
+Peers: {}
+1 has disconnected. Online user number: 1
+Force disconnected 1
+debug: websocket writing 5::/webrtc:{"name":"server-authenticated","args":[{"uid":"1"}]}
+A new client has connected. Online user number: 2
+debug: websocket writing 5::/webrtc:{"name":"chat-wait"}
+Chat ID: 100, attendee number: 1
+debug: emitting heartbeat for client MHZjlhugOSjd5Y0VP4gF
+debug: websocket writing 2::
+debug: set heartbeat timeout for client MHZjlhugOSjd5Y0VP4gF
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client MHZjlhugOSjd5Y0VP4gF
+debug: set heartbeat interval for client MHZjlhugOSjd5Y0VP4gF
+debug: emitting heartbeat for client sdA0PcY7x19jnTKFP4gG
+debug: websocket writing 2::
+debug: set heartbeat timeout for client sdA0PcY7x19jnTKFP4gG
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client sdA0PcY7x19jnTKFP4gG
+debug: set heartbeat interval for client sdA0PcY7x19jnTKFP4gG
+debug: client authorized
+info: handshake authorized OgU_-KbG2NkeX6naP4gL
+debug: setting request GET /socket.io/1/websocket/OgU_-KbG2NkeX6naP4gL?token=1
+debug: set heartbeat interval for client OgU_-KbG2NkeX6naP4gL
+debug: client authorized for 
+debug: websocket writing 1::
+1 authentication passed.
+debug: client authorized for /webrtc
+debug: websocket writing 1::/webrtc
+info: booting client
+debug: websocket writing 0::/webrtc
+Peers: {}
+Delete chat: 100
+1 has disconnected. Online user number: 1
+Force disconnected 1
+debug: websocket writing 5::/webrtc:{"name":"server-authenticated","args":[{"uid":"1"}]}
+A new client has connected. Online user number: 2
+debug: websocket writing 5::/webrtc:{"name":"chat-wait"}
+Chat ID: 100, attendee number: 1
+info: transport end (undefined)
+debug: set close timeout for client MHZjlhugOSjd5Y0VP4gF
+debug: cleared close timeout for client MHZjlhugOSjd5Y0VP4gF
+debug: cleared heartbeat interval for client MHZjlhugOSjd5Y0VP4gF
+debug: discarding transport
+info: transport end (undefined)
+debug: set close timeout for client KIXBNmCmOoGgkh0_P4gK
+debug: cleared close timeout for client KIXBNmCmOoGgkh0_P4gK
+debug: cleared heartbeat interval for client KIXBNmCmOoGgkh0_P4gK
+debug: discarding transport
+info: transport end (undefined)
+debug: set close timeout for client OgU_-KbG2NkeX6naP4gL
+debug: cleared close timeout for client OgU_-KbG2NkeX6naP4gL
+debug: cleared heartbeat interval for client OgU_-KbG2NkeX6naP4gL
+Peers: {}
+Delete chat: 100
+1 has disconnected. Online user number: 1
+debug: discarding transport
+info: transport end (undefined)
+debug: set close timeout for client sdA0PcY7x19jnTKFP4gG
+debug: cleared close timeout for client sdA0PcY7x19jnTKFP4gG
+debug: cleared heartbeat interval for client sdA0PcY7x19jnTKFP4gG
+Peers: {}
+2 has disconnected. Online user number: 0
+debug: discarding transport

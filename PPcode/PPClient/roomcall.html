@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<head>
+  <title>PP2code webrtc Sample --- Call with Room ID</title>
+</head>
+<body>
+  <script src="./sdk/js/socket.io.js" type="text/javascript"></script>
+  <script src="./sdk/js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="./sdk/js/utils.js" type="text/javascript"></script>
+  <script src="./sdk/js/adapter.js" type="text/javascript"></script>
+  <script src="./sdk/gab.websocket.js" type="text/javascript"></script>
+  <script src="./sdk/woogeen.js" type="text/javascript"></script>
+  <script src="./sdk/woogeen.p2p.js" type="text/javascript"></script>
+  <div id="control">
+    <p><input id="uid" type="text" /><button id="login">Login</button><button id="connect">Connect</button><button id="logoff">Disconnect</button></p>
+  </div>
+  <div id="container">
+    <div id="card">
+      <div id="local">
+        <video width="192px" height="144px" id="localVideo" muted="muted" autoplay="autoplay"></video>
+      </div>
+      <div id="remote">
+        <video width="640px" height="480px" id="remoteVideo" autoplay="autoplay"></video>
+        <div id="mini">
+          <video id="miniVideo" autoplay="autoplay"></video>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer id="status"></footer>
+  <div id="infoDiv"></div>
+  <script type="text/javascript">
+  var serverAddress = 'http://96.126.117.202:8095/webrtc';  // Please change it to signaling server's address.
+  var p2p=new Woogeen.Peer({
+    iceServers : [ {
+      urls : "turn:61.129.90.140:4478?transport=udp",
+      credential : "master",
+      username : "woogeen"
+    }, {
+      urls : "turn:61.129.90.140:443?transport=udp",
+      credential : "master",
+      username : "woogeen"
+    }, {
+      urls : "turn:61.129.90.140:4478?transport=tcp",
+      credential : "master",
+      username : "woogeen"
+    }, {
+      urls : "turn:61.129.90.140:443?transport=tcp",
+      credential : "master",
+      username : "woogeen"
+    }, {
+      urls : "stun:61.129.90.140"
+    } ]
+  });  // Initialize a Peer object
+  var roomToken=JSON.stringify({host:serverAddress, id:Utils.getQueryStrings()['roomId']});  // Tokens for join a room.
+  var localStream = Woogeen.Stream({audio:true,video:true});  // It only initializes a Woogeen.Stream object. Using localStream.init() to initialize stream.
+  localStream.addEventListener("access-accepted", function(evt){  // access-accepted event will be triggered when user accepted to use camera/microphone
+    attachMediaStream($('#local video').get(0),localStream.stream)  // Show local stream
+    p2p.joinRoom(roomToken,localStream);  // Join a chat room.
+  });
+
+  $(document).ready(function(){
+    $('#login').click(function(){
+      p2p.connect(serverAddress,$('#uid').val());  // Connect to peer server.
+      $('#uid').prop('disabled',true);
+    });
+    $('#connect').click(function(){
+      localStream.init();  // Initialize local stream.
+    });
+
+    $('#logoff').click(function(){
+      p2p.leaveRoom(roomToken);  // Quit current chat room.
+      $('#uid').prop('disabled',false);
+    });
+  });
+
+  p2p.addEventListener('stream-subscribed',function(e){  // A remote stream is available.
+    $('#remote video').show();
+    attachMediaStream($('#remote video').get(0),e.stream.stream);  // Show remote stream.
+  });
+
+  p2p.addEventListener('chat-stopped',function(e){  // Chat stopped
+    $('#remote video').hide();
+  });
+
+  p2p.addEventListener('chat-started',function(e){  // Chat started
+    console.log('Video chat is started.');
+  });
+  </script>
+</body>
