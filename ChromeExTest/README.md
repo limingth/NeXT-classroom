@@ -7,7 +7,7 @@ chrome-extensionÎÄ¼þ¼ÐÊÇChrome²å¼þµÄÔ´Âë£¬test-pageÎÄ¼þ¼ÐÓÃÓÚ²âÊÔ²å¼þµÄÊµ¼ÊÔËÐÐÇ
 1. ÔÚChromeä¯ÀÀÆ÷µÄÀ©Õ¹³ÌÐòÒ³Ãæ£¨chrome://extensions/£©Ñ¡ÖÐ¡°¿ª·¢ÕßÄ£Ê½¡±µ¥Ñ¡¿ò
 2. µ¥»÷¡°¼ÓÔØÕýÔÚ¿ª·¢µÄÀ©Õ¹³ÌÐò¡±°´Å¥£¬Ñ¡Ôñchrome-extensionÎÄ¼þ¼Ð
 3. ÅäÖÃ±¾µØhttpÓëhttps·þÎñÆ÷£¬½«test-pageÖÐµÄÎÄ¼þ·ÅÈëÖ¸¶¨htmlÄ¿Â¼ÏÂ£¬Ê¹Æä¿ÉÒÔ·ÃÎÊ£¨×¢Òâ£ºLinuxÖÐÓ¦ÊÚÓè.js¿É¶ÁÈ¨ÏÞ£©
-4. ÔÚChromeÖÐ·ÃÎÊÉÏÊöÎÄ¼þµØÖ·£¬±ÈÈç https://localhost/test/index.html£¬ÈôÓöµ½httpsÖ¤Êé²»°²È«¾¯¸æ£¬ÇëÑ¡ÔñÔÊÐíÍøÕ¾¼ÌÐøÏÔÊ¾£¨£¡£¡×¢Òâ£ºChrome²å¼þÄ¿Ç°Ö»ÓµÓÐ·ÃÎÊ"https://localhost/*", "https://maodou.io/*", "https://166.111.131.12/*"µÄÈ¨ÏÞ£¬Òò´ËÐèÒªÔÚÉÏÊödomainÖÐ½øÐÐ²âÊÔ£©
+4. ÔÚChromeÖÐ·ÃÎÊÉÏÊöÎÄ¼þµØÖ·£¬±ÈÈç https://localhost/test/index.html£¬ÈôÓöµ½httpsÖ¤Êé²»°²È«¾¯¸æ£¬ÇëÑ¡ÔñÔÊÐíÍøÕ¾¼ÌÐøÏÔÊ¾£¨£¡£¡×¢Òâ£ºChrome²å¼þÄ¿Ç°Ö»ÓµÓÐ·ÃÎÊ "https://localhost/*", "https://maodou.io/*", "https://166.111.131.12/*" µÄÈ¨ÏÞ£¬Òò´ËÐèÒªÔÚÉÏÊödomainÖÐ½øÐÐ²âÊÔ£©
 5. ÔÚindex.htmlÒ³ÃæÖÐÊäÈëÒªÂ¼ÖÆÊÓÆµµÄ¿í¶ÈÓë¸ß¶È£¬µã»÷recordMedia°´Å¥£¬µ¯³öÂ¼ÆÁ¶Ô»°¿ò£¬Ñ¡ÔñÒ»¸ö´°¿Ú»òÊÇÕû¸ö×ÀÃæ½øÐÐÂ¼ÖÆ
 5.1. Èô´ËÊ±ÌáÊ¾getUserMedia´íÎó£¬Çë¹Ø×¢ChromeµØÖ·À¸µÄ×îÓÒ²à£¬ÏñÉãÏñ»úÒ»ÑùµÄÄÇ¸öÐ¡Í¼±ê£¬ÊÇ·ñÓÐºìÉ«µÄ²æ£ºÈçÓÐ£¬Çëµã»÷¸ÃÍ¼±ê£¬²¢Ñ¡ÔñÔÊÐíÍøÒ³Ê¹ÓÃÄ¬ÈÏÂó¿Ë·çÉè±¸£¬È»ºóÖØÐÂ¼ÓÔØ²å¼þºÍÍøÒ³£¬·µ»Ø²½Öè4£»·ñÔò£¬Ó¦¸ÃÊÇbug£¬ÇëÏòÎÒÌá¹©·´À¡
 6. Â¼ÖÆ¹ý³ÌÖÐÇë²»Òª¹Ø±Õindex.htmlÒ³Ãæ£¬Â¼ÖÆÒ»¶ÎÊ±¼äºó£¬µã»÷stopRecordMedia°´Å¥£¬Ò³ÃæÖÐ½«»áÉú³ÉÁ½¸ö³¬¼¶Á´½Ó£¬Ò»¸öÊÇWebM¸ñÊ½µÄÊÓÆµÎÄ¼þ£¬Ò»¸öÊÇWav¸ñÊ½µÄÒôÆµÎÄ¼þ£»ÈçÃ»ÓÐÏÔÊ¾ÏÂÔØÁ´½Ó£¬Ó¦¸ÃÊÇbug£¬ÇëÏòÎÒÌá¹©·´À¡
